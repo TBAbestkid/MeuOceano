@@ -1,0 +1,61 @@
+/* Importação da Fonte Personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.hero-section {
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(to bottom, #004aad, #00aaff);
+    color: white;
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+.poema-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poema-texto {
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif;
+    color: #f1f1f1;
+}
+
+.assinatura-container {
+    text-align: right; /* Alinha tudo à direita */
+}
+
+.assinatura {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+}
+
+.assinatura-estilizada {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.about-section, .history-section {
+    padding: 40px 20px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.fonte{
+    font-family: 'Cinzel', serif;
+}
