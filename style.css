@@ -8,7 +8,6 @@ body{
 }
 
 .hero-section {
-    font-family: 'Cinzel', serif;
     background: linear-gradient(to bottom, #004aad, #00aaff);
     color: white;
     padding: 80px 20px;
