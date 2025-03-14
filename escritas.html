@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritas - Meu Oceano</title>
+    <!-- Google Fonts para temática RPG -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .card {
+            background: #1c1c1c;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .card h5 {
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .card h5:hover {
+            color: #f8d210;
+        }
+
+        .full-text {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .btn-read {
+            background: none;
+            border: none;
+            color: #f8d210;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: underline;
+            margin-top: 5px;
+        }
+
+        .btn-read:hover {
+            color: #fff;
+        }
+        .jumbotron-fluid {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+            border-radius: 10px;
+        }
+
+        .jumbotron-fluid h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .jumbotron-fluid p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 80%; /* Deixa o conteúdo mais espaçado */
+        }
+
+        .description {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Navbar simples -->
+    <nav class="navbar navbar-expand-lg navbar-dark font-medieval sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-water"></i> Meu Oceano
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#poemas"><i class="fa-solid fa-feather"></i> Poemas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contos"><i class="fa-solid fa-scroll"></i> Contos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#historias"><i class="fa-solid fa-dragon"></i> Histórias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Introdução -->
+    <section id="sobremim" class="about-section container text-center">
+        <h2 class="fonte">Minhas Escritas</h2>
+        <p class="lead">Desde que eu me lembre eu sempre amei escrever sobre qualquer coisa.</p>
+        <img src="images/catescritor.png" class="rounded-circle shadow-sm mt-3 w-25" alt="Ícone">
+        <p class="lead">E eu sempre senti que seria interessante colocar tudo, aqui ou só postar em algum site.</p>
+    </section>    
+
+    <!-- Seção de Poemas -->
+    <section id="poemas" class="">
+        <div class="jumbotron-fluid text-white bg-dark py-5 mb-4">
+            <div class="container text-start">
+                <h2 class="fw-bold display-4">Meus Poemas</h2>
+                <p class="fst-italic">
+                    Escrevo poemas em diferentes épocas da minha vida. <br> 
+                    Cada um carrega um pedaço do que fui, do que sou e do que senti. <br>
+                    Eles são livres para interpretação, mas gosto de deixar minha visão sobre eles. <br> 
+                </p>
+            </div>
+        </div>
+
+        <!-- Poemas -->
+        <div class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="row container mt-4 justify-content-center mx-auto">
+                <!-- Poema Flor da Meia-Noite -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sobre o florescer na escuridão.">
+                        <h5 class="card-title mb-1">Flor da Meia-Noite</h5>
+                        <p class="description text-white small">Um poema sobre o florescer na escuridão.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                                data-title="Flor da Meia-Noite" 
+                                data-image="images/florDameiaNoite.jpg"
+                                data-content="Abraçando a doce escuridão<br>
+                                  E se lamentando no iluminar da lua<br>
+                                  Acreditando na enorme mansidão<br>
+                                  Desabrochando na meia-noite<br>
+                                  Sendo impotente numa bela-noite<br>
+                                  Desfrutar na doçura do luar<br>
+                                  Uma ascensão obscura sem atuar">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Poema Meu Oceano -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sobre o florescer na escuridão.">
+                        <h5 class="card-title mb-1">Meu Oceano</h5>
+                        <p class="description text-white small">Um romance envolvente sobre o grande oceano.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Meu Oceano" 
+                            data-image="images/desenhos/meuoceano.png"
+                            data-content="Imagine que, você é o meu oceano, e eu sou como uma imponente baleia, sinto que anseio pela sua presença que seja constante em minha vida. Aonde quer que eu vá, poderei me sentir envolvido pelo seu abraço, seu manto azul que me cobre é agradável. E seus segredos ocultos, é na sua profundeza que habita sua essência, encontro uma escuridão misteriosa que me fascina, e por eu conhecer essa sua profundidade, me sinto quente e acolhido.">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Poema Queridos vermes -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sombrio sobre a vida e a morte.">
+                        <h5 class="card-title mb-1">Queridos Vermes</h5>
+                        <p class="description text-white small">Um poema sombrio sobre a vida e a morte.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Queridos Vermes"
+                            data-image="images/default.jpg" 
+                            data-content="Para os vermes que me habitará <br>
+                                Saibam que essa carne ao qual comem<br>
+                                É velha, cheia de arrependimentos<br>
+                                Pois quando se vive muito<br>
+                                Pelo menos arrependido estará<br>
+                                De alguma escolhas estúpida<br>
+                                Ou até de ações malfeito<br>
+                                Essa carne ao qual comem<br>
+                                Servirá de nutrientes para os vermes<br>
+                                Igual a de outros entes<br>
+                                Que das cinzas surgi e sumirei<br>
+                                Obrigado, por desaparecer com as provas<br>
+                                Que uma vez, eu pisei aqui nessa terra<br>
+                                Amaldiçoada.
+                            ">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Poema Eis meu desejo -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sombrio sobre a vida e a morte.">
+                        <h5 class="card-title mb-1">Eis meu desejo</h5>
+                        <p class="description text-white small">Um poema pessimista da vida, ansiando por morte.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Eis meu desejo"
+                            data-image="images/default.jpg"
+                            data-content="Não quero viver <br>
+                            Não quero morrer<br>
+                            Não quero preocupações<br>
+                            Não quero ações<br>
+                            Só quero uma coisa<br>
+                            Que é fácil de ter<br>
+                            Mas é difícil acontecer<br>
+                            E que também não há certeza de ocorrer<br>
+                            Essa pequena coisa <br>
+                            Que ao meu ver é preciosa<br>
+                            Eu chamo de inexistência.
+                            ">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Poema Lembre -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sombrio sobre a vida e a morte.">
+                        <h5 class="card-title mb-1">Lembre</h5>
+                        <p class="description text-white small">Nunca se esqueça, da vida e da morte.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Lembre"
+                            data-image="images/default.jpg" 
+                            data-content="Memento vivere! <br>
+                            Lembre-se de viver<br>
+                            Para não se cegar<br>
+                            Não é um sonho<br>
+                            E sim uma realidade<br>
+                            Não vença, conquiste<br>
+                            Não se prende ao banal<br>
+                            Assim como muitos<br>
+                            Mas diferente de todos<br>
+                            <br>
+                            Memento mori!<br>
+                            Lembre-se que morrerás<br>
+                            Mas não se prenda<br>
+                            Nesse destino que todos são fadados<br>
+                            Aprecie cada momento<br>
+                            Como se fosse o último dia<br>
+                            Pois o amanhã é incerto<br>
+                            Todos sabem mas poucos lembram 
+                            ">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Poema Amnésia -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sombrio sobre a vida e a morte.">
+                        <h5 class="card-title mb-1">Amnésia</h5>
+                        <p class="description text-white small">Um poema sombrio sobre a vida e a morte.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Amnésia" 
+                            data-image="images/default.jpg"
+                            data-content="Uma bela noite <br>
+                            Composta por dúvidas <br>
+                            Uma grande estrela <br>
+                            Que brilha muito <br>
+                            Mostrando sua incapacidade <br>
+                            Observada de longe <br>
+                            Um lugar peculiar <br>
+                            Que anseia destino <br>
+                            Vitória nunca terá <br>
+                            Ansiedade agoniante <br>
+                            Que prende nas profundezas <br>
+                            O vazio que é minha certeza.
+                            ">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contos -->
+    <section id="contos">
+        <!-- Jumbotron -->
+        <div class="jumbotron-fluid text-white bg-dark py-5 mb-4">
+            <div class="container text-start">
+                <h2 class="fw-bold display-4">Meus Contos</h2>
+                <p class="fst-italic">
+                    Contos são o que mais escrevo, pois adoro transformar pedaços da minha vida em metáforas. <br>
+                    As analogias e metáforas são minha maior paixão — elas me permitem dar significado ao que, muitas vezes, parece intangível. <br>
+                    Escrever é como aliviar um peso que nem sabia que estava carregando.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contos -->
+        <div class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="row container mt-4 justify-content-center mx-auto">
+                <!-- Conto: Diga às Estrelas, que uma vez amei -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0">
+                        <h5 class="card-title mb-1">Diga às Estrelas, que uma vez amei</h5>
+                        <p class="description text-white small">Um conto melancólico sobre amor e despedidas.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                                data-title="Diga às Estrelas, que uma vez amei" 
+                                data-image="images/default.jpg"
+                                data-file="contos/diga_as_estrelas.html">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- De preto ao vermelho -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um poema sombrio sobre a vida e a morte.">
+                        <h5 class="card-title mb-1">De preto ao vermelho</h5>
+                        <p class="description text-white small">Um conto sobre transformação e destino.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="De preto ao vermelho"
+                            data-image=""
+                            data-file="contos/de_preto_ao_vermelho.html">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Destroçado -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Destroçado">
+                        <h5 class="card-title mb-1">Destroçado</h5>
+                        <p class="description text-white small">Viver em uma dor constante.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Destroçado"
+                            data-image="" 
+                            data-file="contos/destrocado.html">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Árvore -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="São tão presentes e tão belas.">
+                        <h5 class="card-title mb-1">Árvore</h5>
+                        <p class="description text-white small">Um conto sobre árvores.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Árvore"
+                            data-image=""
+                            data-file="contos/arvore.html">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Histórias -->
+    <section id="historias">
+        <div class="jumbotron-fluid text-white bg-dark py-5 mb-4">
+            <div class="container text-start">
+                <h2 class="fw-bold display-4">Minhas histórias</h2>
+                <p class="fst-italic">
+                    Escrever uma história rica em detalhes, com personagens de personalidades marcantes e um mundo diferente do nosso, sempre foi algo natural para mim. <br>
+                    Desde pequeno, tenho ideias para histórias e sempre as escrevi. Agora, ao olhar para elas, percebo o quanto o tempo passou. <br> 
+                    Talvez seja a hora de revisá-las e dar a elas uma nova vida.
+                </p>
+            </div>
+        </div>
+
+        <!-- Historias -->
+        <div class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="row container mt-4 justify-content-center mx-auto">
+                <!-- Abyss Tears -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Um mundo repleto de caos, onde só precisamos de uma busca.">
+                        <h5 class="card-title mb-1">Abyss Tears</h5>
+                        <p class="description text-white small">Um romance cheio de mistério e fantasia.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Abyss Tears" 
+                            data-image=""
+                            data-file="contos/abyss_tears.html">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- O Reflexo -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Nossos olhos são limitados.">
+                        <h5 class="card-title mb-1">O Reflexo</h5>
+                        <p class="description text-white small">As vezes, o outro lado esconde um segredo</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" data-title="Amnésia" data-content="Texto completo do poema Queridos Vermes...">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Isso não é um romance -->
+                <!-- <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Dores constantes, sonhos repentinos.">
+                        <h5 class="card-title mb-1">Isso não é um romance</h5>
+                        <p class="description text-white small">Nem tudo é romance.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="Isso não é um romance" 
+                            data-image="">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div> -->
+
+                <!-- My Universe -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 bg-dark text-white border-0" title="Nada de mais.">
+                        <h5 class="card-title mb-1">My Universe</h5>
+                        <p class="description text-white small">Uma historia sobre todos os meus personagens.</p>
+                        <p class="mb-0">
+                            <a href="#" class="btn btn-outline-dark text-decoration-none text-light fw-light small ler-mais" 
+                            data-title="My Universe" 
+                            data-content="Isso ainda será desenvolvido, peço para que aguarde por mais atualizações.">
+                                Ler mais →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para Visualização -->
+    <div class="modal fade" id="poemModal" tabindex="-1" aria-labelledby="poemModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white rounded-3">
+                <div class="modal-header">
+                    <div class="d-flex align-items-center">
+                        <img src="" id="ImagemTroca" alt="Poema Icon" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                        <h5 class="modal-title" id="poemModalLabel">Título do Poema</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="poemText">Aqui será exibido o texto completo do poema.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Meu Oceano. Criado por TBAbestkid.</p>
+        <div class="social-icons mt-2">
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a> -->
+            <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".ler-mais").forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // Evita rolagem para o topo
+
+                    let titulo = this.getAttribute("data-title") || "Título Indisponível";
+                    let imagem = this.getAttribute("data-image") || "images/default.jpg";
+                    let conteudo = this.getAttribute("data-content") || "";
+                    let arquivo = this.getAttribute("data-file");
+
+                    document.getElementById("poemModalLabel").innerHTML = titulo;
+                    document.getElementById("ImagemTroca").src = imagem;
+
+                    if (arquivo) {
+                        fetch(arquivo)
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error("Erro ao carregar o arquivo");
+                                }
+                                return response.text();
+                            })
+                            .then(data => {
+                                document.getElementById("poemText").innerHTML = data;
+                            })
+                            .catch(error => {
+                                document.getElementById("poemText").innerHTML = "Erro ao carregar o poema.";
+                            });
+                    } else {
+                        document.getElementById("poemText").innerHTML = conteudo || "Nenhum conteúdo disponível.";
+                    }
+
+                    let modal = new bootstrap.Modal(document.getElementById("poemModal"));
+                    modal.show();
+                });
+            });
+        });
+
+        function openModal(title, content) {
+            // Define o título do modal
+            document.getElementById("poemModalLabel").textContent = title;
+
+            // Define o conteúdo do poema
+            document.getElementById("poemText").textContent = content;
+
+            // Exibe o modal usando Bootstrap
+            var modal = new bootstrap.Modal(document.getElementById("poemModal"));
+            modal.show();
+        }
+
+        // js para quando passar mouse acima dos cards poemas
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".card");
+
+            cards.forEach(card => {
+                card.addEventListener("mouseenter", function () {
+                    const description = this.querySelector(".description");
+                    if (description) {
+                        description.style.maxHeight = "50px"; // Ajuste conforme o tamanho do texto
+                        description.style.opacity = "1";
+                    }
+                });
+
+                card.addEventListener("mouseleave", function () {
+                    const description = this.querySelector(".description");
+                    if (description) {
+                        description.style.maxHeight = "0";
+                        description.style.opacity = "0";
+                    }
+                });
+            });
+        });
+
+        
+
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
