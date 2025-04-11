@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos - Meu Oceano</title>
+    <link rel="icon" href="images/logos-site-T.png" type="image/x-icon">
+    <!-- Google Fonts para temática RPG -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar simples -->
+    <nav class="navbar navbar-expand-lg navbar-dark font-medieval">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fonte" href="#">
+                <i class="fa-solid fa-water"></i> Meu Oceano
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#jogos"><i class="fa-solid fa-gamepad"></i> Jogos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introdução -->
+    <section id="sobremim" class="about-section container text-center">
+        <h2 class="fonte">Meus jogos</h2>
+        <p class="lead">Ainda tenho um grande sonho, de criar um jogo de minhas historias que escrevo, mas no entanto, é bom começar com ideias pequenas né?</p>
+        <img src="images/catgaymer.png" class="rounded-circle shadow-sm mt-3 w-25" alt="Ícone">
+        <p class="lead">Aqui temos alguns jogos que eu fiz:</p>
+    </section>
+
+    <!-- Seção de Jogos -->
+    <section id="jogos" class="">
+        <div class="jumbotron-fluid text-white bg-dark py-5 mb-4">
+            <div class="container text-start">
+                <h2 class="text-start fw-bold mb-4">Meus Jogos</h2>
+                <p class="fst-italic">
+                    Sempre joguei e sempre pensava, e se eu criasse um mundo só meu? <br> 
+                    E se eu inserir regras para outros players ao qual eles obedecem? <br>
+                    Ou melhor, e se eu transformar minhas historias em jogos, onde ao em vez de ler mil coisas, as pessoas iriam experienciar visualmente e fazer suas escolhas? <br>
+                    Então, esse são alguns jogos que não são o que quero atualmente, mas são um começo <br> 
+                </p>
+            </div>
+        </div>
+
+        <div class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="row container mt-4 justify-content-center mx-auto">
+                
+                <!-- Guess Game -->
+                <div class="card mb-4 shadow-lg border-0 flex-md-row bg-dark text-white">
+                    <img src="https://images.emojiterra.com/google/android-11/512px/1f3b4.png" class="img-fluid rounded-start w-100 w-md-25" style="max-width: 250px; object-fit: cover;" alt="Guess Game imagem">
+                    
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title">Guess Game</h4>
+                            <p class="card-text">
+                                Um jogo simples de adivinhação com 3 cartas! Escolha uma e veja se você acerta.  
+                                Seu objetivo é acumular o máximo de pontos antes do tempo acabar. <br>
+                                É um jogo de navegador, que foi feito pra estudo, utilizando HTML, CSS, Bootstrap e Javascript
+                            </p>
+
+                            <!-- Gêneros -->
+                            <div class="mb-3">
+                                <span class="badge bg-secondary me-1">Casual</span>
+                                <span class="badge bg-primary me-1">Adivinhação</span>
+                                <span class="badge bg-success">Tempo</span>
+                            </div>
+                        </div>
+
+                        <a href="https://tbabestkid.github.io/Guess-Game/" target="_blank" class="btn btn-outline-light mt-2 align-self-start">
+                            Jogue agora →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Acucarado -->
+                <div class="card mb-4 shadow-lg border-0 flex-md-row bg-dark text-white">
+                    <img src="images/artGame/acucar.png" class="img-fluid rounded-start w-100 w-md-25" style="max-width: 250px; object-fit: cover;" alt="Guess Game imagem">
+                    
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title">Acucarado</h4>
+                            <p class="card-text">
+                                Um jogo em que você controla uma formiguinha determinada em coletar cubos de açúcar espalhados por cenários cada vez mais difíceis.  
+                                Passe por obstáculos, desvie de perigos e colete tudo antes que o tempo acabe! Cada fase é um desafio novo com uma pitada doce.
+                            </p>
+                            
+                            <!-- Gêneros -->
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">Plataforma</span>
+                                <span class="badge bg-danger me-1">Puzzle</span>
+                                <span class="badge bg-success">Aventura</span>
+                            </div>
+                        </div>
+
+                        <a href="#" target="_blank" class="btn disabled btn-outline-light mt-2 align-self-start">
+                            <i class="fa-solid fa-hourglass-half me-2"></i> A ser desenvolvido
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MazerKill -->
+                <div class="card mb-4 shadow-lg border-0 flex-md-row bg-dark text-white">
+                    <img src="images/artGame/MazerKillIcon_1.png" class="img-fluid rounded-start w-100 w-md-25" style="max-width: 250px; object-fit: cover;" alt="Imagem principal do MazerKill">
+                    
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title">MazerKill</h4>
+                            <p class="card-text">
+                                MazerKill começou como uma ideia dentro do Roblox, mas acabou se transformando em uma experiência sombria independente.  
+                                Neste jogo de terror, você acorda perdido dentro de um labirinto misterioso, sem saber como chegou lá — e muito menos o que está à espreita.
+                            </p>
+                            <p class="card-text">
+                                O objetivo é simples: encontrar uma saída. Mas o labirinto guarda segredos, pistas do que aconteceu e uma narrativa oculta.  
+                                É um dos primeiros projetos onde explorei a criação de lore e personagens com mais profundidade.
+                            </p>
+                            <small><i class="fa-solid fa-circle-info"></i> Todos os desenhos de MazerKill foram feitos por mim.</small>
+                            <!-- Gêneros -->
+                            <div class="mb-3">
+                                <span class="badge bg-dark border border-light me-1">Terror</span>
+                                <span class="badge bg-secondary me-1">Labirinto</span>
+                                <span class="badge bg-info text-dark">Narrativa</span>
+                            </div>
+
+                            <!-- Botão mostrar imagens -->
+                            <button class="btn btn-outline-light btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#mazerkillImages">
+                                Ver mais imagens
+                            </button>
+
+                            <!-- Imagens extras -->
+                            <div class="collapse" id="mazerkillImages">
+                                <div class="row">
+                                    <div class="col-6 col-md-6 mt-2">
+                                        <img src="images/artGame/MazerKillConceptArt.png" class="img-fluid rounded shadow-sm" alt="Cena 1 do jogo">
+                                    </div>
+                                    <div class="col-6 col-md-6 mt-2">
+                                        <img src="images/artGame/MazerKillWill_1.png" class="img-fluid rounded shadow-sm" alt="Cena 2 do jogo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" target="_blank" class="btn disabled btn-outline-light mt-2 align-self-start">
+                            <i class="fa-solid fa-hourglass-half me-2"></i> A ser desenvolvido
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- The Afterline Engine -->
+                <div class="card mb-4 shadow-lg border-0 flex-md-row bg-dark text-white">
+                    <!-- Ícone ilustrativo do dragão -->
+                     <div class="d-flex align-items-center justify-content-center p-4" style="max-width: 200px;">
+                        <i class="fa-solid fa-fire-flame-curved text-light" style="font-size: 6rem;"></i>
+                    </div>
+
+
+                    <!-- Conteúdo do jogo -->
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title">The Afterline Engine</h4>
+                            <p class="card-text">
+                                Um RPG ambicioso que está sendo construído com muito carinho.  
+                                Aqui você cria seu próprio personagem, define suas habilidades e é inserido no vasto e misterioso mundo de Gukin — onde cada decisão molda seu destino.
+                            </p>
+
+                            <!-- Gêneros -->
+                            <div class="mb-3">
+                                <span class="badge bg-dark border border-light me-1">RPG</span>
+                                <span class="badge bg-secondary me-1">Turno</span>
+                                <span class="badge bg-info text-dark">Narrativa</span>
+                            </div>
+
+                            <!-- Botão mostrar imagens -->
+                            <button class="btn btn-outline-light btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#TAEImages">
+                                Ver mais imagens
+                            </button>
+
+                            <!-- Imagens extras -->
+                            <div class="collapse" id="TAEImages">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mt-2">
+                                        <img src="images/artGame/TheAfterlineEngine.png" class="img-fluid rounded shadow-sm" alt="Cena do jogo The Afterline Engine">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" target="_blank" class="btn disabled btn-outline-light mt-2 align-self-start">
+                            <i class="fa-solid fa-hourglass-half me-2"></i> A ser desenvolvido
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
