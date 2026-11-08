@@ -1,296 +1,352 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Oceano</title>
-    <link rel="icon" href="images/logos-site-T.png" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center fonte" href="#">
-                <i class="fa-solid fa-water me-2"></i> Meu Oceano
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" href="#">
-                            <i class="fa-solid fa-house me-2"></i> Início
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#sobremim">
-                            <i class="fa-solid fa-user me-2"></i> Sobre Mim
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#criacao">
-                            <i class="fa-solid fa-pen-ruler me-2"></i> Minhas Criações
-                        </a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#maoajudante">
-                            <i class="fa-solid fa-hand-holding-dollar me-2"></i> Mão Ajudante
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TBAbestkid — escritor, artista e desenvolvedor · Meu Oceano</title>
+    <meta
+      name="description"
+      content="Histórias, desenhos e jogos de TBAbestkid. Um portfólio autoral à beira do mar à noite."
+    />
+    <link rel="canonical" href="https://tbabestkid.github.io/MeuOceano/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Meu Oceano" />
+    <meta
+      property="og:title"
+      content="TBAbestkid — escritor, artista e desenvolvedor · Meu Oceano"
+    />
+    <meta
+      property="og:description"
+      content="Histórias, desenhos e jogos de TBAbestkid. Um portfólio autoral à beira do mar à noite."
+    />
+    <meta property="og:url" content="https://tbabestkid.github.io/MeuOceano/" />
+    <meta
+      property="og:image"
+      content="https://tbabestkid.github.io/MeuOceano/images/optimized/oceano-hero.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Baleia de Meu Oceano, ilustração autoral de TBAbestkid"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="TBAbestkid — escritor, artista e desenvolvedor · Meu Oceano"
+    />
+    <meta
+      name="twitter:description"
+      content="Histórias, desenhos e jogos de TBAbestkid. Um portfólio autoral à beira do mar à noite."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tbabestkid.github.io/MeuOceano/images/optimized/oceano-hero.webp"
+    />
+    <meta name="theme-color" content="#081923" />
+    <link rel="icon" href="images/logos-site-T.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body id="topo">
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html"
+          ><span aria-hidden="true">≋</span> Meu Oceano<span
+            class="brand-dot"
+            aria-hidden="true"
+            >✦</span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-controls="navigation"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navigation" aria-label="Principal">
+          <a href="index.html" aria-current="page">Início</a
+          ><a href="escritas.html">Escritas</a
+          ><a href="desenhos.html">Desenhos</a><a href="jogos.html">Jogos</a
+          ><a href="index.html#sobremim">Sobre mim</a
+          ><a class="nav-support" href="#maoajudante">Apoiar ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <span class="eyebrow">O portfólio de TBAbestkid</span>
+          <h1>Entre histórias,<br />rabiscos e <em>marés.</em></h1>
+          <p>
+            Oi, eu sou o TBA. Escritor, artista e desenvolvedor.<br />Gosto de
+            inventar mundos — com palavras, traços e um pouco de código.
+          </p>
+          <a class="button" href="#criacao"
+            >Explorar minhas criações <span aria-hidden="true">↓</span></a
+          ><a class="quiet-link" href="#sobremim">Um pouco sobre mim ↗</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section text-center d-flex flex-column justify-content-center align-items-center fonte">
-        <h1 class="display-4 fw-bold">Bem-vindo ao Meu Oceano</h1>
-        <p class="lead">Uma jornada através da minha história e criações.</p>
-    
-    </section>
-
-    <!-- Sobre Mim -->
-    <section id="sobremim" class="about-section container text-center">
-        <h2 class="fonte">Quem Sou Eu?</h2>
-        <p class="lead">Olá! Meu nome é <b class="fonte">TBAbestkid</b>, sou um desenvolvedor fullstack</p>
-        <img src="images/darbro.jpg" class="rounded-circle shadow-sm mt-3 w-25" alt="Ícone">
-        <p class="lead">Eu irei compartilhar um pouquinho de minha jornada...</p>
-    </section>
-
-    <!-- Linha do Tempo -->
-    <section class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
-        <div class="history-section container">
-            <h2 class="text-center">Minha Pequena Jornada</h2>
-    
-            <!-- Infância -->
-            <div class="row mt-4 d-flex align-items-center">
-                <div class="col-md-6">
-                    <div class="card shadow-sm p-3 bg-dark text-white">
-                        <h5 class="card-title fonte">Infância</h5>
-                        <p class="card-text">
-                            Desde pequeno, sempre fui fascinado por criar coisas. Seja rabiscando cadernos com desenhos, escrevendo pequenas histórias ou imaginando mundos inteiros na minha cabeça, 
-                            minha mente estava sempre viajando.  
-                        </p>
-                        <p class="card-text">
-                            Sonhava em ser um grande artista, criar quadrinhos, personagens e talvez até um jogo... mas naquela época, programação nem passava pela minha cabeça. Meu mundo era o papel, 
-                            os lápis de cor e os jogos que eu jogava sem imaginar que um dia poderia criar algo parecido.
-                        </p>
-                        <p class="card-text">
-                            Uma curiosidade sobre mim é que, desde sempre, eu amei desenhar criaturas místicas—sejam elas mitológicas, fictícias ou de mundos imaginários. 
-                            Sempre me fascinou criar seres grandes, com dentes afiados, chifres imponentes e uma aparência intimidadora, que transmitissem poder e mistério.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <a href="https://www.instagram.com/p/CdMnKEXuT8z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
-                        target="_blank"
-                        data-bs-toggle="popover"
-                        data-bs-trigger="hover"
-                        data-bs-content="Clique e Siga o autor no Instagram!">
-                        <img src="images/desenhos/DragonsAndWolfs.PNG" class="img-fluid rounded shadow-sm" alt="Infância">
-                    </a>
-                </div>
-            </div>
-    
-            <!-- Descobrindo a Programação -->
-            <div class="row mt-4 d-flex align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="card shadow-sm p-3 bg-dark text-white">
-                        <h5 class="card-title fonte">Descobrindo a Programação</h5>
-                        <p class="card-text">
-                            Então um dia, meio que sem querer, a vida me jogou no mundo da informática. Um familiar meu me sugeriu fazer uma prova para um curso técnico. Sem pensar muito, aceitei e passei. 
-                            E foi aí que meu destino mudou. 
-                        </p>
-                        <p class="card-text">
-                            No primeiro dia de aula, eu sinceramente queria sair correndo. "Programação? Que doideira!", pensei. Mas com o tempo, fui pegando gosto pela coisa.  
-                            No começo, parecia um monte de símbolos sem sentido, mas quando percebi que eu podia criar qualquer coisa com código, <b>BOOM</b>, algo despertou em mim. 
-                            Era como desenhar, mas de um jeito totalmente novo.
-                        </p>
-                        <p class="card-text">
-                            O conto de "Cachorro e Árvore" surgiu de um dos questionamentos que eu fazia durante o curso. Na verdade, ao longo das aulas, estudamos lógica, e, enquanto eu analisava inúmeros códigos e conceitos, minha visão de mundo foi sendo levemente bagunçada, trazendo uma nova e absurda perspectiva sobre as coisas.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <a href="https://www.instagram.com/p/Ch2m9YyO_bw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
-                        target="_blank"
-                        data-bs-toggle="popover"
-                        data-bs-trigger="hover"
-                        data-bs-content="Clique e Siga o autor no Instagram!">
-                            <img src="images/desenhos/CachorroArvore.PNG" class="img-fluid rounded shadow-sm" alt="Programação">
-                    </a>
-                </div>
-            </div>
-    
-            <!-- Desenvolvedor -->
-            <div class="row mt-4 d-flex align-items-center">
-                <div class="col-md-6">
-                    <div class="card shadow-sm p-3 bg-dark text-white">
-                        <h5 class="card-title fonte">Me Tornando um Desenvolvedor </h5>
-                        <p class="card-text">
-                            A paixão pela programação só cresceu. Cada projeto que eu criava, cada erro que eu resolvia, cada pequena funcionalidade que eu conseguia fazer rodar, me fazia sentir 
-                            que eu estava no caminho certo.
-                            <small>Ignorando aquele erro que surge e fica por semanas te atormentando, onde todos os dias você fica pensativo se realmente aquele diploma pendurado na parede é seu.</small>
-                        </p>
-                        <p class="card-text">
-                            Hoje, sou um desenvolvedor fullstack (mas confesso, o front-end tem um lugar especial no meu coração ❤️).  
-                            Meu objetivo? Criar coisas incríveis, misturar código com criatividade e, quem sabe, ainda realizar aquele sonho antigo de criar jogos. 
-                        </p>
-                        <p class="card-text">
-                            Ao longo do tempo, aprimorei minhas habilidades em programação e escrevi diversos contos. No entanto, às vezes sinto que perdi algo no caminho — já não desenho tanto quanto antes.  
-                            Meus traços se resumem a rabiscos inacabados, como se me faltasse a paciência de antes.  
-                            Ainda assim, tento, dia após dia, treinar e estudar assuntos que me interessam, sempre buscando reencontrar aquele prazer de desenhar.  
-                            Quem sabe, num futuro não tão distante, eu volte a criar mais do que nunca.  
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <a href="https://www.instagram.com/p/CsCZCxdu727/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
-                        target="_blank"
-                        data-bs-toggle="popover"
-                        data-bs-trigger="hover"
-                        data-bs-content="Clique e Siga o autor no Instagram!">
-                            <img src="images/desenhos/meuoceano.png" class="img-fluid rounded shadow-sm" alt="Desenvolvimento">
-                    </a>
-                </div>
-            </div>
+        <figure class="hero-art">
+          <img
+            src="images/optimized/oceano-hero.webp"
+            alt="Minha baleia azul nadando entre estrelas e as profundezas do oceano"
+            width="1200"
+            height="1059"
+            fetchpriority="high"
+          />
+          <figcaption>Meu Oceano · arte por TBAbestkid</figcaption>
+        </figure>
+      </section>
+      <section class="shell highlights" aria-labelledby="destaques">
+        <div class="section-heading">
+          <span class="eyebrow">O que anda tomando forma</span>
+          <h2 id="destaques">Na superfície, por enquanto.</h2>
         </div>
-
-    </section>
-
-    <!-- Seção de Criações -->
-    <section id="criacao" class="creation-section container">
-        <div class="row mt-4 d-flex justify-content-center">
-
-            <!-- Escritas -->
-            <div class="col-md-4 d-flex">
-                <div class="card shadow-sm p-3 bg-dark text-white text-center h-100 d-flex flex-column">
-                    <i class="fa-solid fa-feather-pointed fa-3x mb-3"></i>
-                    <h5 class="card-title fonte">Escritas</h5>
-                    <p class="card-text flex-grow-1">Ver as criações escritas? Poemas, contos e histórias.</p>
-                    <a href="escritas.html" class="btn btn-primary mt-auto">Ver mais</a>
-                </div>
+        <div class="feature-grid">
+          <article class="feature story-feature">
+            <img
+              class="book-cover"
+              src="images/optimized/404-cover.webp"
+              alt="Capa de 404: You Not Found, por TBAbestkid"
+              width="256"
+              height="400"
+              loading="lazy"
+            />
+            <div>
+              <span class="eyebrow">Uma história em outras vidas</span>
+              <h3>404: You Not Found</h3>
+              <p>
+                Taylor e Alex se reencontram em diferentes vidas, do Egito
+                Antigo a um futuro que tenta explicar a maldição. E, em todas
+                elas, Taylor vê Alex partir primeiro.
+              </p>
+              <a class="text-link" href="escritas.html#404-you-not-found"
+                >Conhecer a história ↗</a
+              >
             </div>
-
-            <!-- Desenhos -->
-            <div class="col-md-4 d-flex">
-                <div class="card shadow-sm p-3 bg-dark text-white text-center h-100 d-flex flex-column">
-                    <i class="fa-solid fa-paintbrush fa-3x mb-3"></i>
-                    <h5 class="card-title fonte">Desenhos</h5>
-                    <p class="card-text flex-grow-1">Artes publicadas em redes sociais, rascunhos e projetos privados.</p>
-                    <a href="desenhos.html" class="btn btn-primary mt-auto">Ver mais</a>
-                </div>
-            </div>
-
-            <!-- Jogos -->
-            <div class="col-md-4 d-flex">
-                <div class="card shadow-sm p-3 bg-dark text-white text-center h-100 d-flex flex-column">
-                    <i class="fa-solid fa-gamepad fa-3x mb-3"></i>
-                    <h5 class="card-title fonte">Jogos</h5>
-                    <p class="card-text flex-grow-1">Pequenos jogos criados de forma simples, mas que são um jogo.</p>
-                    <a href="jogos.html" class="btn btn-primary mt-auto">Ver mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contato e Redes Sociais -->
-    <section class="text-center mt-5">
-        <h3 class="fw-bold">Me Acompanhe</h3>
-        <p class=" text-white">
-            Quer saber mais sobre minhas criações ou entrar em contato? <br>
-            Me siga nas redes!
-        </p>
-
-        <div class="d-flex justify-content-center gap-3 mt-3">
-            <a href="https://x.com/TBestkid" class="btn btn-outline-dark p-3" title="X/Twitter">
-                <i class="fa-brands fa-twitter"></i> TBestkid
-            </a>
-
-            <a href="https://www.instagram.com/tbabestkid_/" class="btn btn-outline-danger p-3" title="Instagram">
-                <i class="fab fa-instagram fa-lg"></i> tbabestkid_
-            </a>
-
-            <a href="https://github.com/TBAbestkid" class="btn btn-outline-secondary p-3" title="GitHub">
-                <i class="fab fa-github fa-lg"></i> TBAbestkid
-            </a>
-        </div>
-    </section>
-
-    <!-- Mão Ajudante -->
-    <section id="maoajudante" class="text-center mt-5 py-5 bg-dark text-white">
-        <div class="text-start container">
-            <h3 class="fw-bold mb-3">Que tal apoiar?</h3>
-            <p class="lead">
-                Se gosta do que faço e quer ajudar, considere apoiar de alguma forma! <br>
-                Você pode me seguir nas redes ou contribuir financeiramente.
+          </article>
+          <article class="feature tellover">
+            <span class="eyebrow">Um lugar pra criar junto</span>
+            <h3>Uma ideia pela metade<br />já é um começo.</h3>
+            <p>
+              Criei o TellOver pra ter um lugar onde uma ideia ainda pela metade
+              já pode virar conversa. Por lá, dá pra reunir projetos, mostrar o
+              que está tomando forma e trocar feedback com outros criadores.
             </p>
-
-            <!-- QR Codes -->
-            <div class="text-start d-flex justify-content-center gap-4 mt-4 flex-wrap">
-                <div class="text-start">
-                    <img src="images/Qrcode.jpeg" alt="QR Code PIX" class="img-fluid rounded shadow" width="150">
-                    <p class="mt-2 small">Doe via <b>PIX</b></p>
-                </div>
-                <!-- <div>
-                    <img src="images/qrcode-patreon.png" alt="QR Code Patreon" class="img-fluid rounded shadow" width="150">
-                    <p class="mt-2 small">Apoie no <b>Patreon</b></p>
-                </div> -->
+            <div class="actions">
+              <a class="button" href="https://tellover.me/"
+                >Conhecer o TellOver ↗</a
+              ><a href="https://tellover.me/perfil/tbabestkid"
+                >Ver meu perfil ↗</a
+              >
             </div>
+          </article>
         </div>
+      </section>
+      <section class="shell section" id="criacao">
+        <span class="eyebrow">Escolha uma correnteza</span>
+        <h2>Minhas criações</h2>
+        <div class="creation-grid">
+          <a class="creation-card" href="escritas.html"
+            ><span class="eyebrow">01</span>
+            <h3>Escritas <span aria-hidden="true">↗</span></h3>
+            <p>
+              Poemas, contos e histórias. Um pedaço do que fui, do que sou e do
+              que senti.
+            </p></a
+          ><a class="creation-card" href="desenhos.html"
+            ><span class="eyebrow">02</span>
+            <h3>Desenhos <span aria-hidden="true">↗</span></h3>
+            <p>
+              Criaturas, personagens e rabiscos. Os mundos que tento colocar no
+              papel.
+            </p></a
+          ><a class="creation-card" href="jogos.html"
+            ><span class="eyebrow">03</span>
+            <h3>Jogos <span aria-hidden="true">↗</span></h3>
+            <p>
+              Pequenas experiências e sonhos maiores, uma linha de código por
+              vez.
+            </p></a
+          >
+        </div>
+      </section>
+      <section class="shell section" id="sobremim">
+        <div class="about-heading">
+          <div>
+            <span class="eyebrow">A pessoa por trás da baleia</span>
+            <h2>Quem sou eu?</h2>
+            <p>
+              Olá! Meu nome é <strong>TBAbestkid</strong>, sou um desenvolvedor
+              fullstack. Eu irei compartilhar um pouquinho de minha jornada...
+            </p>
+          </div>
+          <img
+            src="images/optimized/darbro.webp"
+            width="640"
+            height="640"
+            alt="Darbro, meu personagem e ícone autoral"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <article class="journey">
+          <div>
+            <span class="eyebrow">01 / Minha pequena jornada</span>
+            <h3>Infância</h3>
+            <p class="card-text">
+              Desde pequeno, sempre fui fascinado por criar coisas. Seja
+              rabiscando cadernos com desenhos, escrevendo pequenas histórias ou
+              imaginando mundos inteiros na minha cabeça, minha mente estava
+              sempre viajando.
+            </p>
+            <p class="card-text">
+              Sonhava em ser um grande artista, criar quadrinhos, personagens e
+              talvez até um jogo... mas naquela época, programação nem passava
+              pela minha cabeça. Meu mundo era o papel, os lápis de cor e os
+              jogos que eu jogava sem imaginar que um dia poderia criar algo
+              parecido.
+            </p>
+            <p class="card-text">
+              Uma curiosidade sobre mim é que, desde sempre, eu amei desenhar
+              criaturas místicas—sejam elas mitológicas, fictícias ou de mundos
+              imaginários. Sempre me fascinou criar seres grandes, com dentes
+              afiados, chifres imponentes e uma aparência intimidadora, que
+              transmitissem poder e mistério.
+            </p>
+          </div>
+          <figure>
+            <a
+              href="https://www.instagram.com/p/CdMnKEXuT8z/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+              ><img
+                src="images/optimized/desenhos-dragonsandwolfs.webp"
+                width="518"
+                height="522"
+                alt="Dragões e lobos, criaturas que eu imaginava desde pequeno"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <figcaption>Criar mundos começou no papel.</figcaption>
+          </figure>
+        </article>
+        <article class="journey">
+          <div>
+            <span class="eyebrow">02 / Minha pequena jornada</span>
+            <h3>Descobrindo a Programação</h3>
+            <p class="card-text">
+              Então um dia, meio que sem querer, a vida me jogou no mundo da
+              informática. Um familiar meu me sugeriu fazer uma prova para um
+              curso técnico. Sem pensar muito, aceitei e passei. E foi aí que
+              meu destino mudou.
+            </p>
+            <p class="card-text">
+              No primeiro dia de aula, eu sinceramente queria sair correndo.
+              "Programação? Que doideira!", pensei. Mas com o tempo, fui pegando
+              gosto pela coisa. No começo, parecia um monte de símbolos sem
+              sentido, mas quando percebi que eu podia criar qualquer coisa com
+              código, <b>BOOM</b>, algo despertou em mim. Era como desenhar, mas
+              de um jeito totalmente novo.
+            </p>
+            <p class="card-text">
+              O conto de "Cachorro e Árvore" surgiu de um dos questionamentos
+              que eu fazia durante o curso. Na verdade, ao longo das aulas,
+              estudamos lógica, e, enquanto eu analisava inúmeros códigos e
+              conceitos, minha visão de mundo foi sendo levemente bagunçada,
+              trazendo uma nova e absurda perspectiva sobre as coisas.
+            </p>
+          </div>
+          <figure>
+            <a
+              href="https://www.instagram.com/p/Ch2m9YyO_bw/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+              ><img
+                src="images/optimized/desenhos-cachorroarvore.webp"
+                width="531"
+                height="380"
+                alt="Cachorro e Árvore, um conto que nasceu nas aulas de lógica"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <figcaption>Até a lógica vira história.</figcaption>
+          </figure>
+        </article>
+        <article class="journey">
+          <div>
+            <span class="eyebrow">03 / Minha pequena jornada</span>
+            <h3>Me Tornando um Desenvolvedor</h3>
+            <p class="card-text">
+              A paixão pela programação só cresceu. Cada projeto que eu criava,
+              cada erro que eu resolvia, cada pequena funcionalidade que eu
+              conseguia fazer rodar, me fazia sentir que eu estava no caminho
+              certo.
+              <small
+                >Ignorando aquele erro que surge e fica por semanas te
+                atormentando, onde todos os dias você fica pensativo se
+                realmente aquele diploma pendurado na parede é seu.</small
+              >
+            </p>
+            <p class="card-text">
+              Hoje, sou um desenvolvedor fullstack (mas confesso, o front-end
+              tem um lugar especial no meu coração ❤️). Meu objetivo? Criar
+              coisas incríveis, misturar código com criatividade e, quem sabe,
+              ainda realizar aquele sonho antigo de criar jogos.
+            </p>
+            <p class="card-text">
+              Ao longo do tempo, aprimorei minhas habilidades em programação e
+              escrevi diversos contos. No entanto, às vezes sinto que perdi algo
+              no caminho — já não desenho tanto quanto antes. Meus traços se
+              resumem a rabiscos inacabados, como se me faltasse a paciência de
+              antes. Ainda assim, tento, dia após dia, treinar e estudar
+              assuntos que me interessam, sempre buscando reencontrar aquele
+              prazer de desenhar. Quem sabe, num futuro não tão distante, eu
+              volte a criar mais do que nunca.
+            </p>
+          </div>
+          <figure>
+            <a
+              href="https://www.instagram.com/p/CsCZCxdu727/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+              ><img
+                src="images/optimized/desenhos-meuoceano.webp"
+                width="640"
+                height="565"
+                alt="A baleia de Meu Oceano, entre arte e programação"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <figcaption>Código e criatividade, no mesmo oceano.</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+    <section class="support shell" id="maoajudante">
+      <div>
+        <span class="eyebrow">Uma mão ajudante</span>
+        <h2>Gostou de passear por aqui?</h2>
+        <p>
+          Se gosta do que faço e quer ajudar, considere apoiar de alguma forma!
+          Você pode me seguir nas redes ou contribuir via PIX.
+        </p>
+        <div class="socials">
+          <a href="https://www.instagram.com/tbabestkid_/">Instagram ↗</a
+          ><a href="https://github.com/TBAbestkid">GitHub ↗</a
+          ><a href="https://x.com/TBestkid">X / Twitter ↗</a>
+        </div>
+      </div>
+      <figure>
+        <img
+          src="images/optimized/qrcode.webp"
+          width="640"
+          height="640"
+          alt="QR Code PIX original para apoiar TBAbestkid"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Um incentivo pra continuar criando. ♡</figcaption>
+      </figure>
     </section>
-
-<!-- <a href="#" class="text-dark my-2" title="LinkedIn">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a> -->
-            
-            <!-- <a href="#" class="text-dark my-2" title="Wattpad">
-                <i class="fas fa-book"></i> Wattpad
-            </a> -->
-            
-            <!-- <a href="#" class="text-dark my-2" title="Meu Ícone">
-                <img src="" alt="Ícone personalizado" width="24"> Meu Ícone
-            </a> -->
-        <!-- <div class="mt-3">
-            <a href="mailto:kharenaguiar@gmail.com" class="btn btn-primary">
-                <i class="fa-solid fa-envelope"></i> Enviar E-mail
-            </a>
-        </div> -->
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Meu Oceano. Criado por TBAbestkid.</p>
-        <div class="social-icons mt-2">
-            <a href="https://x.com/TBestkid" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/tbabestkid_/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-            <!-- <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a> -->
-            <a href="https://github.com/TBAbestkid" class="text-white mx-2"><i class="fab fa-github"></i></a>
-        </div>
+    <footer class="site-footer shell">
+      <a class="brand" href="index.html">≋ Meu Oceano</a>
+      <p>Criado por TBAbestkid. Um pedacinho de mim na internet.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
     </footer>
-
-    <!-- Scripts -->
-    <script async src="//www.instagram.com/embed.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script></body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-                return new bootstrap.Popover(popoverTriggerEl);
-            });
-        });
-    </script>
+  </body>
 </html>
