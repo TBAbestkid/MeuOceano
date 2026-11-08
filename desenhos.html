@@ -1,801 +1,1724 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenhos - Meu Oceano</title>
-    <link rel="icon" href="images/logos-site-T.png" type="image/x-icon">
-    <!-- Google Fonts para temática RPG -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Select2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .img-desenho {
-            object-fit: contain;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .img-desenho:hover {
-            transform: scale(1.05);
-        }
-        .img-desenho {
-            max-height: 500px;
-            width: auto;
-            transition: transform 0.3s ease;
-        }
-        .img-desenho:hover {
-            transform: scale(1.03);
-        }
-
-        .img-desenho-grande {
-            max-height: 600px; /* ou 700px, ajuste como preferir */
-        }
-
-    </style>
-</head>
-<body>
-    <!-- Navbar simples -->
-    <nav class="navbar navbar-expand-lg navbar-dark font-medieval bg-dark sticky-top">
-        <div class="container">
-        <a class="navbar-brand" href="#">
-            <i class="fa-solid fa-water"></i> Meu Oceano
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desenhos · Meu Oceano</title>
+    <meta
+      name="description"
+      content="Artes, personagens, fanarts e estudos de TBAbestkid. Explore os desenhos e os bastidores de cada criação."
+    />
+    <link
+      rel="canonical"
+      href="https://tbabestkid.github.io/MeuOceano/desenhos.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Meu Oceano" />
+    <meta property="og:title" content="Desenhos · Meu Oceano" />
+    <meta
+      property="og:description"
+      content="Artes, personagens, fanarts e estudos de TBAbestkid. Explore os desenhos e os bastidores de cada criação."
+    />
+    <meta
+      property="og:url"
+      content="https://tbabestkid.github.io/MeuOceano/desenhos.html"
+    />
+    <meta
+      property="og:image"
+      content="https://tbabestkid.github.io/MeuOceano/images/optimized/oceano-hero.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Baleia de Meu Oceano, ilustração autoral de TBAbestkid"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Desenhos · Meu Oceano" />
+    <meta
+      name="twitter:description"
+      content="Artes, personagens, fanarts e estudos de TBAbestkid. Explore os desenhos e os bastidores de cada criação."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tbabestkid.github.io/MeuOceano/images/optimized/oceano-hero.webp"
+    />
+    <meta name="theme-color" content="#081923" />
+    <link rel="icon" href="images/logos-site-T.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body id="topo">
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html"
+          ><span aria-hidden="true">≋</span> Meu Oceano<span
+            class="brand-dot"
+            aria-hidden="true"
+            >✦</span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-controls="navigation"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">
-                        <i class="fa-solid fa-house"></i> Início
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#desenhos">
-                        <i class="fa-solid fa-palette me-2"></i> Desenhos
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#maoajudante">
-                        <i class="fa-solid fa-hand-holding-dollar me-2"></i> Mão Ajudante
-                    </a>
-                </li>
-            </ul>
+        <nav id="navigation" aria-label="Principal">
+          <a href="index.html">Início</a><a href="escritas.html">Escritas</a
+          ><a href="desenhos.html" aria-current="page">Desenhos</a
+          ><a href="jogos.html">Jogos</a
+          ><a href="index.html#sobremim">Sobre mim</a
+          ><a class="nav-support" href="#maoajudante">Apoiar ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section class="page-intro shell" id="sobremim">
+        <span class="eyebrow">Um traço de cada vez</span>
+        <h1>Desenhos</h1>
+        <p>
+          Criaturas místicas, personagens e uns rabiscos pelo caminho. Nem tudo
+          está pronto — e essa também é a graça.
+        </p>
+        <nav class="section-nav" aria-label="Coleções">
+          <a href="#estudos">Estudos recentes ↓</a
+          ><a href="#desenhos">Passear pela galeria ↓</a>
+        </nav>
+      </section>
+      <section class="shell section" id="estudos">
+        <div class="section-heading">
+          <h2>Na minha mesa de desenho</h2>
+          <p>
+            Uma seleção do meu projeto
+            <a href="https://tellover.me/projects/rascunhos-estudos"
+              >Rascunhos & Estudos no TellOver ↗</a
+            >.
+          </p>
         </div>
+        <div class="study-grid">
+          <article class="art-card study">
+            <button
+              class="art-open"
+              type="button"
+              data-art="images/aidem.webp"
+              data-title="Redesenhando o Aidem"
+              aria-label="Ampliar Redesenhando o Aidem"
+            >
+              <img
+                src="images/optimized/aidem.webp"
+                width="606"
+                height="665"
+                alt="Aidem redesenhado: criatura de pelo preto e vermelho, segurando uma xícara e um livro"
+                fetchpriority="high"
+                decoding="async"
+              /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+            </button>
+            <div class="art-caption">
+              <span class="status">Em desenvolvimento</span>
+              <h3>Redesenhando o Aidem</h3>
+              <p>
+                Atualizando o design de um OC meu. Ainda está em
+                desenvolvimento.
+              </p>
+              <a
+                class="text-link"
+                href="https://tellover.me/post/188/tbabestkid"
+                >Ver estudo no TellOver ↗</a
+              >
+              <p><a href="#aidem-antigo">O Aidem de antes ↓</a></p>
+            </div>
+          </article>
+          <article class="art-card study">
+            <button
+              class="art-open"
+              type="button"
+              data-art="images/okkaalion.webp"
+              data-title="Redesenhando o Okkaalion"
+              aria-label="Ampliar Redesenhando o Okkaalion"
+            >
+              <img
+                src="images/optimized/okkaalion.webp"
+                width="353"
+                height="639"
+                alt="Lineart do novo Okkaalion, criatura com chifres e uma longa cauda"
+                fetchpriority="high"
+                decoding="async"
+              /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+            </button>
+            <div class="art-caption">
+              <span class="status">Em desenvolvimento</span>
+              <h3>Redesenhando o Okkaalion</h3>
+              <p>
+                Um novo design pro meu personagem de RPG. Por enquanto, a
+                lineart.
+              </p>
+              <a
+                class="text-link"
+                href="https://tellover.me/post/191/tbabestkid"
+                >Ver estudo no TellOver ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card study">
+            <button
+              class="art-open"
+              type="button"
+              data-art="images/hette.webp"
+              data-title="Hette"
+              aria-label="Ampliar Hette"
+            >
+              <img
+                src="images/optimized/hette.webp"
+                width="605"
+                height="700"
+                alt="Estudo de Hette em linhas, com duas figuras e um capuz em forma de tubarão"
+                fetchpriority="high"
+                decoding="async"
+              /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+            </button>
+            <div class="art-caption">
+              <span class="status">Em desenvolvimento</span>
+              <h3>Hette</h3>
+              <p>Um estudo em processo, parte de Rascunhos & Estudos.</p>
+              <a
+                class="text-link"
+                href="https://tellover.me/post/212/tbabestkid"
+                >Ver estudo no TellOver ↗</a
+              >
+            </div>
+          </article>
         </div>
-    </nav>
-
-    <!-- Introdução -->
-    <section id="sobremim" class="about-section container text-center">
-        <h2 class="fonte">Meus Desenhos</h2>
-        <p class="lead">Sempre imaginei que desenhar fosse simplesmente mover a mão de um lado para o outro, enquanto segurava um lápis ou uma caneta.</p>
-        <img src="images/catpintor.png" class="shadow-sm mt-3 w-25" alt="Ícone">
-        <p class="lead">Minhas artes, apesar de não ter estudo formal nem prática constante, são tudo o que me restou de algo que fui e desejo voltar a ser.</p>
-    </section>  
-        
-    <!-- Seção de Desenhos -->
-    <section id="desenhos" class="">
-        <div class="jumbotron-fluid text-white bg-dark py-5 mb-4">
-            <div class="container text-start">
-                <h2 class="fw-bold display-4">Desenhos</h2>
-                <p class="fst-italic">
-                    Desenhos sempre foram meu ponto forte; eu simplesmente amava desenhar. <br> 
-                    Estava sempre criando, inventando personagens originais (OCs) e elaborando histórias incríveis. <br> 
-                    Eu imaginava cenas dos meus personagens em momentos marcantes de suas vidas, e isso me encantava. No entanto, embora eu fosse bom em criar a aparência física deles, nunca parei para construir um universo completo e bem elaborado para eles, de forma apropriada. <br> 
-                    Estes são todos os desenhos que possuo atualmente (e que consegui encontrar para salvar).
-                </p>
-                <small class="fst-italic">Inclusive será atualizado mais tarde, com mais desenhos.</small>
-            </div>
+      </section>
+      <section class="shell section" id="desenhos">
+        <div class="section-heading">
+          <span class="eyebrow">Meu acervo</span>
+          <h2>Entre criaturas e lembranças</h2>
+          <p>
+            As legendas são parte da história. Clique numa arte para ver o
+            original; use as setas para passear pelas versões de uma mesma peça.
+          </p>
         </div>
-        
-        <div class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
-            <h2 class="fonte mb-4 text-center">Desenhos</h2>
-        
-            <!-- Olhar Azul -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/OlharAzul.png" alt="Olhar Azul de estrelas" class="img-fluid shadow-sm rounded img-desenho img-desenho-grande">
-                    </div>  
-                    <div class="col-md-6">
-                        <h4 class="text-white">Olhar Azul</h4>
-                        <p class="text-start text-white">
-                            Eu fiz, refiz, apaguei, fiz de novo... Não gostei das cores que usei. <br>
-                            Demorei mais tempo decidindo como seria o desenho do que desenhando de fato. <br>
-                            Até que, finalmente, decidi que seria apenas algo simples — e azul, claro.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/DIaQTaOuCJw/" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+        <div class="gallery-grid">
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/OlharAzul.png"
+                  data-title="Olhar Azul de estrelas"
+                  aria-label="Ampliar Olhar Azul de estrelas"
+                >
+                  <img
+                    src="images/optimized/desenhos-olharazul.webp"
+                    width="445"
+                    height="315"
+                    alt="Olhar Azul de estrelas"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Sirius -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Sirius</h4>
-                        <p class="text-start text-white">
-                            Este foi feito refazendo um estilo do <b>Cursed Soul</b>, arte logo abaixo desta. <br>
-                            A princípio, a ideia era refazer o conceito da silhueta com detalhes em vermelho. <br>
-                            Assim como no primeiro, eu queria uma silhueta preta com alguns detalhes vermelhos, mas que, ao olhar o próximo desenho, tudo estivesse normal. <br>
-                            Essa era a ideia inicial. Espero que goste!
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/DH2Q01JO2Xm/?utm_source=ig_web_copy_link" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/PersonSoul.png" alt="Person Cursed" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Olhar Azul</h3>
+              <p class="text-start text-white">
+                Eu fiz, refiz, apaguei, fiz de novo... Não gostei das cores que
+                usei. <br />
+                Demorei mais tempo decidindo como seria o desenho do que
+                desenhando de fato. <br />
+                Até que, finalmente, decidi que seria apenas algo simples — e
+                azul, claro.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/DIaQTaOuCJw/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Person Cursed -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/Soul.png" alt="Person Cursed" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Soul</h4>
-                        <p class="text-start text-white">
-                            Eu só queria fazer algum desenho, qualquer um. Mas, ao menos, queria ter algo para postar. <br>
-                            Então, fiz alguns rabiscos, disse que estava pronto e mandei bala. <br>
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/DHzyRFPOjEg/?utm_source=ig_web_copy_link" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PersonSoul.png"
+                  data-title="Sirius"
+                  aria-label="Ampliar Sirius"
+                >
+                  <img
+                    src="images/optimized/desenhos-personsoul.webp"
+                    width="378"
+                    height="315"
+                    alt="Sirius, estudo de personagem inspirado na silhueta de Cursed Soul"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Borboleta -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/brabuleta.png" alt="Borboleta" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Borboleta</h4>
-                        <p class="text-start text-white">
-                            Desenho que, a princípio, era para ser apenas em preto e branco, mas acabei decidindo fazer uma borboleta azul.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Cl2MCZ0OYVz/" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Sirius</h3>
+              <p class="text-start text-white">
+                Este foi feito refazendo um estilo do <b>Cursed Soul</b>, arte
+                logo abaixo desta. <br />
+                A princípio, a ideia era refazer o conceito da silhueta com
+                detalhes em vermelho. <br />
+                Assim como no primeiro, eu queria uma silhueta preta com alguns
+                detalhes vermelhos, mas que, ao olhar o próximo desenho, tudo
+                estivesse normal. <br />
+                Essa era a ideia inicial. Espero que goste!
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/DH2Q01JO2Xm/?utm_source=ig_web_copy_link"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Cachorro e Árvore com Carrossel -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row">
-                    <div class="col-md-6 text-center">
-                        <div id="carouselCachorroArvore" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/CachorroArvore.PNG" class="d-block w-100 img-desenho" alt="Cachorro e Árvore 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/Cachorroearvore.png" class="d-block w-100 img-desenho" alt="Cachorro e Árvore 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/Cachorroearvore(1).png" class="d-block w-100 img-desenho" alt="Cachorro e Árvore 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/Cachorroearvore(2).png" class="d-block w-100 img-desenho" alt="Cachorro e Árvore 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/Cachorroearvore(3).png" class="d-block w-100 img-desenho" alt="Cachorro e Árvore 5">
-                                </div>
-                            </div>
-
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCachorroArvore" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCachorroArvore" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Cachorro e Árvore</h4>
-                        <p class="text-start text-white">
-                            Era para ser um conto que carregasse o peso da existência, uma pergunta sem resposta, uma dúvida que só crescia — especialmente durante minha vida no Ensino Médio. <br>
-                            Enfim... além disso, essa história era pra ser um mini livrinho, algo que eu realmente queria expandir. <br>
-                            Tornar ela mais do que um mero conto.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Ch2m9YyO_bw/" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Soul.png"
+                  data-title="Soul"
+                  aria-label="Ampliar Soul"
+                >
+                  <img
+                    src="images/optimized/desenhos-soul.webp"
+                    width="378"
+                    height="315"
+                    alt="Soul, personagem criado a partir dos meus rabiscos"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Dragões e Lobo -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Dragões e Lobo</h4>
-                        <p class="text-start text-white">
-                            Apenas um lobo qualquer, com diversos ferimentos e cicatrizes, ao lado de um dragão que carrega uma chama azul — como se estivesse oferecendo algo em troca —, enquanto um segundo dragão, mais ao canto, apenas observa.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CdMnKEXuT8z/" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/DragonsAndWolfs.PNG" alt="Dragões e Lobos" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Soul</h3>
+              <p class="text-start text-white">
+                Eu só queria fazer algum desenho, qualquer um. Mas, ao menos,
+                queria ter algo para postar. <br />
+                Então, fiz alguns rabiscos, disse que estava pronto e mandei
+                bala. <br />
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/DHzyRFPOjEg/?utm_source=ig_web_copy_link"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Fuan -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/Fuan.png" alt="Fuan" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Fuan</h4>
-                        <p class="text-start text-white">
-                            Este personagem não é meu, é do meu amigo Mewzuw. Tudo o que fiz foi redesenhá-lo no meu estilo. <br>
-                            Foi uma das artes que mais gostei de fazer.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CnQtaH1OIQv/" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/brabuleta.png"
+                  data-title="Borboleta"
+                  aria-label="Ampliar Borboleta"
+                >
+                  <img
+                    src="images/optimized/desenhos-brabuleta.webp"
+                    width="640"
+                    height="452"
+                    alt="Borboleta"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Lobo da Noite -->
-            <div class="card bg-dark text-white p-4 rounded-4 shadow-sm mb-5">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/lobodorabogrande.png" alt="Ilustração do Lobo da Noite" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Lobo da Noite</h4>
-                        <p class="text-start text-white">
-                            O lobo traz a noite enquanto vaga pelo nosso mundo. Por onde ele passa, a escuridão domina. <br>
-                            A lua agradece e aprecia a corrida eterna do lobo. <br>
-                            Mas há adoradores do sol que tentam impedir sua jornada — o que é impossível.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Cv_H3n4OVpE/" target="_blank" rel="noopener noreferrer">Ver no Instagram</a>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Borboleta</h3>
+              <p class="text-start text-white">
+                Desenho que, a princípio, era para ser apenas em preto e branco,
+                mas acabei decidindo fazer uma borboleta azul.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/Cl2MCZ0OYVz/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Meu Oceano -->
-            <div class="card bg-dark text-white p-4 rounded-4 shadow-sm mb-5">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/meuoceano.png" alt="Ilustração Meu Oceano com baleia azul" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Meu Oceano</h4>
-                        <p class="text-start text-white">
-                            Entre tons suaves e profundos, entre o meu azul e o seu, esse oceano guarda segredos do coração. <br>
-                            Essa arte retrata a minha baleia, que não é apenas uma criatura do mar, mas a personificação do meu poema "Meu Oceano" — e também deste site que você visita agora. <br>
-                            Aqui, você é um navegante, como tantos outros que cruzam mares digitais em seus navegadores — Chrome, Opera, Explorer... Mas hoje, você chegou a um canto especial: chegou ao meu oceano. <br>
-                            Enquanto explora a superfície, talvez veja beleza, calma, talvez um reflexo seu nas águas. Mas se continuar, se mergulhar mais fundo, poderá conhecer minhas profundezas — pensamentos, sentimentos, e tudo aquilo que carrego em silêncio, como uma baleia que canta embaixo d’água. <br>
-                            Persistindo nesse site, você navega em mim.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CsCZCxdu727/" target="_blank" rel="noopener noreferrer">Ver no Instagram</a>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div
+              class="carousel"
+              id="carouselCachorroArvore"
+              aria-label="Versões de Cachorro e Árvore"
+            >
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/CachorroArvore.PNG"
+                  data-title="Cachorro e Árvore 1"
+                  aria-label="Ampliar Cachorro e Árvore 1"
+                >
+                  <img
+                    src="images/optimized/desenhos-cachorroarvore.webp"
+                    width="531"
+                    height="380"
+                    alt="Cachorro e Árvore 1"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Cachorroearvore.png"
+                  data-title="Cachorro e Árvore 2"
+                  aria-label="Ampliar Cachorro e Árvore 2"
+                >
+                  <img
+                    src="images/optimized/desenhos-cachorroearvore.webp"
+                    width="640"
+                    height="453"
+                    alt="Cachorro e Árvore 2"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Cachorroearvore(1).png"
+                  data-title="Cachorro e Árvore 3"
+                  aria-label="Ampliar Cachorro e Árvore 3"
+                >
+                  <img
+                    src="images/optimized/desenhos-cachorroearvore-1-.webp"
+                    width="640"
+                    height="453"
+                    alt="Cachorro e Árvore 3"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Cachorroearvore(2).png"
+                  data-title="Cachorro e Árvore 4"
+                  aria-label="Ampliar Cachorro e Árvore 4"
+                >
+                  <img
+                    src="images/optimized/desenhos-cachorroearvore-2-.webp"
+                    width="640"
+                    height="453"
+                    alt="Cachorro e Árvore 4"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Cachorroearvore(3).png"
+                  data-title="Cachorro e Árvore 5"
+                  aria-label="Ampliar Cachorro e Árvore 5"
+                >
+                  <img
+                    src="images/optimized/desenhos-cachorroearvore-3-.webp"
+                    width="640"
+                    height="453"
+                    alt="Cachorro e Árvore 5"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Cachorro e Árvore"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 5</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Cachorro e Árvore"
+                >
+                  →
+                </button>
+              </div>
             </div>
-
-            <!-- Diga às Estrelas que uma Vez Amei -->
-            <div class="card bg-dark text-white p-4 rounded-4 shadow-sm mb-5">
-                <div class="row align-items-center flex-md-row">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/Diga_as_estrelas_que_amei.png" alt="Ilustração do conto Diga às Estrelas que Amei" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Diga às Estrelas que uma Vez Amei</h4>
-                        <p class="text-start text-white">
-                            Essa é a capa do meu conto. O personagem, desenhado apenas como uma silhueta, está ali mais como pano de fundo — a verdadeira intenção era destacar as estrelas e, acima de tudo, dar um rosto visual a esse conto tão especial. <br>
-                            Durante minha ida à faculdade, preciso viajar todos os dias, pois não moro na mesma cidade. E como estudo à noite, volto sempre tarde. Sento ao lado da janela do ônibus, e todas as noites faço companhia para as estrelas. <br>
-                            Ou talvez elas façam companhia para mim. Não sei. Só sei que foi ali, nessas noites silenciosas e estreladas, que nasceu a inspiração para esse conto. <br>
-                            Sou um romancista melodramático — gosto de escrever como se cada palavra carregasse o peso de um mundo. E este conto... carrega o peso de muitas noites olhando para o céu.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.wattpad.com/1525016873-diga-%C3%A0s-estrelas-que-uma-vez-amei-cap%C3%ADtulo-%C3%BAnico" target="_blank" rel="noopener noreferrer">Ver no Wattpad</a>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Cachorro e Árvore</h3>
+              <p class="text-start text-white">
+                Era para ser um conto que carregasse o peso da existência, uma
+                pergunta sem resposta, uma dúvida que só crescia — especialmente
+                durante minha vida no Ensino Médio. <br />
+                Enfim... além disso, essa história era pra ser um mini livrinho,
+                algo que eu realmente queria expandir. <br />
+                Tornar ela mais do que um mero conto.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/Ch2m9YyO_bw/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Tba -->
-            <div class="card bg-dark text-white p-4 rounded-4 shadow-sm mb-5">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Tba</h4>
-                        <p class="text-start text-white">
-                            Gosto de jogar Roblox, e por isso resolvi desenhar meu personagem. Ele tem a forma de uma cabeça de TV, e já passou por várias versões, todas as quais eu desenhei.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CkG-2jDuC2K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div id="carouselTba" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/tbaSemTb.PNG" class="d-block w-100" alt="Tba 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/tbaComTv.PNG" class="d-block w-100" alt="Tba 2">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTba" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTba" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/DragonsAndWolfs.PNG"
+                  data-title="Dragões e Lobos"
+                  aria-label="Ampliar Dragões e Lobos"
+                >
+                  <img
+                    src="images/optimized/desenhos-dragonsandwolfs.webp"
+                    width="518"
+                    height="522"
+                    alt="Dragões e Lobos"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Oni -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Oni</h4>
-                        <p class="text-start text-white">
-                            Eu queria desenhar algo sangrento, mas com um toque de verde. Essa era a ideia inicial, e foi assim que este desenho nasceu. <br>
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CiYNaaKugkC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div id="carouselOni" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/Onisangue.PNG" class="d-block w-100" alt="Oni 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/OniAviso.PNG" class="d-block w-100" alt="Oni 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/OniComSangue.PNG" class="d-block w-100" alt="Oni 3">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOni" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOni" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Dragões e Lobo</h3>
+              <p class="text-start text-white">
+                Apenas um lobo qualquer, com diversos ferimentos e cicatrizes,
+                ao lado de um dragão que carrega uma chama azul — como se
+                estivesse oferecendo algo em troca —, enquanto um segundo
+                dragão, mais ao canto, apenas observa.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CdMnKEXuT8z/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Aidem -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Aidem</h4>
-                        <p class="text-start text-white">
-                            Aidem é um personagem que faz parte do meu universo de OCs. <br>
-                            Ele pertence a Darbro e, basicamente, está em um processo de corrupção. <br>
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CgssJhuuCn8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/VerdadeiroAidem.PNG" alt="O Verdadeiro Aidem" class="img-fluid shadow-sm rounded img-desenho">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Fuan.png"
+                  data-title="Fuan"
+                  aria-label="Ampliar Fuan"
+                >
+                  <img
+                    src="images/optimized/desenhos-fuan.webp"
+                    width="640"
+                    height="452"
+                    alt="Fuan"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- De Preto Ao Vermelho -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">De Preto ao Vermelho</h4>
-                        <p class="text-start text-white">
-                            Este desenho também retrata o conto "De Preto ao Vermelho". <br>
-                            Nele, um pequenino caminha por uma estrada desolada, até que, em meio à sua jornada, um grande lobo carmesim surge. <br>
-                            O conto está postado próximo à arte.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CeUbgwwufPV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver o conto no Instagram</a>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CeUaomWO_zp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver a arte no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/dePretoAovermelho.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="De preto ao vermelho">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Fuan</h3>
+              <p class="text-start text-white">
+                Este personagem não é meu, é do meu amigo Mewzuw. Tudo o que fiz
+                foi redesenhá-lo no meu estilo. <br />
+                Foi uma das artes que mais gostei de fazer.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CnQtaH1OIQv/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Ekatos -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Ekatos</h4>
-                        <p class="text-start text-white">
-                            Este é Ekatos, um personagem que também faz parte do meu universo de OCs. <br>
-                            Ele está no mesmo universo de Darbro, Kihiko, Horo e outros personagens perdidos por aí. <br>
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CdpCR17ucJR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/Ekatos.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Ekatos">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/lobodorabogrande.png"
+                  data-title="Ilustração do Lobo da Noite"
+                  aria-label="Ampliar Ilustração do Lobo da Noite"
+                >
+                  <img
+                    src="images/optimized/desenhos-lobodorabogrande.webp"
+                    width="640"
+                    height="565"
+                    alt="Ilustração do Lobo da Noite"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Mewzuw -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/PresenteMew.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Presente Mewzuw">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Mewzuw</h4>
-                        <p class="text-start text-white">
-                            Esse desenho foi um presente para meu amigo Mewzuw, ao qual citei mais cedo. <br>
-                            Apesar de simples, é um desenho bem trabalhado ao qual eu gosto de ver, e saber que ele também gostou, me deixa feliz.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CdZxRu2OTWF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Lobo da Noite</h3>
+              <p class="text-start text-white">
+                O lobo traz a noite enquanto vaga pelo nosso mundo. Por onde ele
+                passa, a escuridão domina. <br />
+                A lua agradece e aprecia a corrida eterna do lobo. <br />
+                Mas há adoradores do sol que tentam impedir sua jornada — o que
+                é impossível.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/Cv_H3n4OVpE/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Gabi -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Gabi</h4>
-                        <p class="text-start text-white">
-                            Este desenho também foi um presente, e foi feito para a Gabi. <br>
-                            Eu queria algo diferente, então criei duas mini versões de Darbro entregando flores como forma de presente.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CbT7wyoOqfM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div id="carouselGabi" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/PresenteGabi.PNG" class="d-block w-100" alt="Presente Gabi 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/PresenteGabiParteDois.PNG" class="d-block w-100" alt="Presente Gabi 2">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGabi" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-light rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGabi" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-light rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/meuoceano.png"
+                  data-title="Ilustração Meu Oceano com baleia azul"
+                  aria-label="Ampliar Ilustração Meu Oceano com baleia azul"
+                >
+                  <img
+                    src="images/optimized/desenhos-meuoceano.webp"
+                    width="640"
+                    height="565"
+                    alt="Ilustração Meu Oceano com baleia azul"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Dragão e Lobo -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column">
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/DragaoNaturezaELoboEspada.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Dragão e Lobo">
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="text-white">Dragão e Lobo</h4>
-                        <p class="text-start text-white">
-                            Aqui está o meu esforço para desenhar um lobo em uma posição de luta, segurando uma arma. <br>
-                            O dragão está ali simplesmente porque eu gosto de dragões e achei que faria sentido.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Meu Oceano</h3>
+              <p class="text-start text-white">
+                Entre tons suaves e profundos, entre o meu azul e o seu, esse
+                oceano guarda segredos do coração. <br />
+                Essa arte retrata a minha baleia, que não é apenas uma criatura
+                do mar, mas a personificação do meu poema "Meu Oceano" — e
+                também deste site que você visita agora. <br />
+                Aqui, você é um navegante, como tantos outros que cruzam mares
+                digitais em seus navegadores — Chrome, Opera, Explorer... Mas
+                hoje, você chegou a um canto especial: chegou ao meu oceano.
+                <br />
+                Enquanto explora a superfície, talvez veja beleza, calma, talvez
+                um reflexo seu nas águas. Mas se continuar, se mergulhar mais
+                fundo, poderá conhecer minhas profundezas — pensamentos,
+                sentimentos, e tudo aquilo que carrego em silêncio, como uma
+                baleia que canta embaixo d’água. <br />
+                Persistindo nesse site, você navega em mim.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CsCZCxdu727/"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Horo e Darbro -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Horo e Darbro</h4>
-                        <p class="text-start text-white">
-                            Horo e Darbro, em um universo distante, discutindo. <br>
-                            Apesar deste desenho ser antigo, ele é um dos meus favoritos, especialmente pela anatomia.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/HoroAndDarbro.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Horo e Darbro">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Diga_as_estrelas_que_amei.png"
+                  data-title="Ilustração do conto Diga às Estrelas que Amei"
+                  aria-label="Ampliar Ilustração do conto Diga às Estrelas que Amei"
+                >
+                  <img
+                    src="images/optimized/desenhos-diga_as_estrelas_que_amei.webp"
+                    width="439"
+                    height="700"
+                    alt="Ilustração do conto Diga às Estrelas que Amei"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- De Preto ao Vermelho -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">De Preto ao Vermelho</h4>
-                        <p class="text-start text-white">
-                            Esta é a primeira arte de "Preto ao Vermelho". O conto já havia sido escrito, mas não foi corrigido nem postado. <br>
-                            Então, em meio a essa coletânea de desenhos no post, essa é a primeira versão. <br>
-                            Ela é a terceira arte no post do lobo.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/PrimeiraArteDePretoAoVermelho.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="De preto ao vermelho">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Diga às Estrelas que uma Vez Amei</h3>
+              <p class="text-start text-white">
+                Essa é a capa do meu conto. O personagem, desenhado apenas como
+                uma silhueta, está ali mais como pano de fundo — a verdadeira
+                intenção era destacar as estrelas e, acima de tudo, dar um rosto
+                visual a esse conto tão especial. <br />
+                Durante minha ida à faculdade, preciso viajar todos os dias,
+                pois não moro na mesma cidade. E como estudo à noite, volto
+                sempre tarde. Sento ao lado da janela do ônibus, e todas as
+                noites faço companhia para as estrelas. <br />
+                Ou talvez elas façam companhia para mim. Não sei. Só sei que foi
+                ali, nessas noites silenciosas e estreladas, que nasceu a
+                inspiração para esse conto. <br />
+                Sou um romancista melodramático — gosto de escrever como se cada
+                palavra carregasse o peso de um mundo. E este conto... carrega o
+                peso de muitas noites olhando para o céu.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.wattpad.com/1525016873-diga-%C3%A0s-estrelas-que-uma-vez-amei-cap%C3%ADtulo-%C3%BAnico"
+                rel="noopener noreferrer"
+                >Ver no Wattpad ↗</a
+              >
             </div>
-
-            <!-- Os Três Irmãos -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row-reverse flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Os Três Irmãos</h4>
-                        <p class="text-start text-white">
-                            Esse desenho surgiu devido àquela famosa expressão: "Não olhe para o mal, não escute o mal, não pronuncie o mal". <br>
-                            Mizaru, Kikazaru e Iwazaru - Os três macacos sábios. <br>
-                            Eu então meio que desenhei uma versão minha, onde eles são irmãos. <br>
-                            São as duas últimas imagens do post do lobo.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div id="carouselIrmao" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/SurdoCegoMudo.PNG" class="d-block w-100 img-desenho" alt="Três irmãos silhueta">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/SurdoCegoMudoParteDois.PNG" class="d-block w-100 img-desenho" alt="Três irmãos">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIrmao" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIrmao" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div class="carousel" id="carouselTba" aria-label="Versões de Tba">
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/tbaSemTb.PNG"
+                  data-title="Tba 1"
+                  aria-label="Ampliar Tba 1"
+                >
+                  <img
+                    src="images/optimized/desenhos-tbasemtb.webp"
+                    width="621"
+                    height="618"
+                    alt="Tba 1"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/tbaComTv.PNG"
+                  data-title="Tba 2"
+                  aria-label="Ampliar Tba 2"
+                >
+                  <img
+                    src="images/optimized/desenhos-tbacomtv.webp"
+                    width="614"
+                    height="615"
+                    alt="Tba 2"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Tba"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 2</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Tba"
+                >
+                  →
+                </button>
+              </div>
             </div>
-
-            <!-- Em Meio à Luta -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Em Meio à Luta</h4>
-                        <p class="text-start text-white">
-                            Atualmente, estou escrevendo <b>Abyss Tears</b>, que conta a história de Kurome e Agatha no mundo de Opheromon. <br>
-                            Essa arte representa um momento durante a jornada delas nesse mundo, em meio a uma guerra contra diversos seres corrompidos.
-                        </p>
-                        <a class="btn btn-outline-light mb-2" href="https://www.wattpad.com/1492577862-abyss-tears-cap%C3%ADtulo-1-despertar" target="_blank">Leia no Wattpad!</a><br>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CZxzSz6OdX5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/AgathaEKuromeLuta.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Kurome e Agatha">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Tba</h3>
+              <p class="text-start text-white">
+                Gosto de jogar Roblox, e por isso resolvi desenhar meu
+                personagem. Ele tem a forma de uma cabeça de TV, e já passou por
+                várias versões, todas as quais eu desenhei.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CkG-2jDuC2K/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Saturn -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row-reverse flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Saturn</h4>
-                        <p class="text-start text-white">
-                            Esse desenho foi um presente para uma amiga, a Lulu. <br>
-                            Eu estava desenhando a personagem dela no meu estilo, e o resultado está aqui. <br>
-                            Esse também é um dos meus desenhos favoritos.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CXhy1j6uBdF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/PresenteLulu.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Saturn">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div class="carousel" id="carouselOni" aria-label="Versões de Oni">
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Onisangue.PNG"
+                  data-title="Oni 1"
+                  aria-label="Ampliar Oni 1"
+                >
+                  <img
+                    src="images/optimized/desenhos-onisangue.webp"
+                    width="494"
+                    height="620"
+                    alt="Oni 1"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/OniAviso.PNG"
+                  data-title="Oni 2"
+                  aria-label="Ampliar Oni 2"
+                >
+                  <img
+                    src="images/optimized/desenhos-oniaviso.webp"
+                    width="492"
+                    height="525"
+                    alt="Oni 2"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/OniComSangue.PNG"
+                  data-title="Oni 3"
+                  aria-label="Ampliar Oni 3"
+                >
+                  <img
+                    src="images/optimized/desenhos-onicomsangue.webp"
+                    width="490"
+                    height="602"
+                    alt="Oni 3"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Oni"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 3</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Oni"
+                >
+                  →
+                </button>
+              </div>
             </div>
-
-            <!-- Hutao e Yoimiya -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Hutao e Yoimiya</h4>
-                        <p class="text-start text-white">
-                            Uma fanart de Genshin Impact. Basicamente, é um shipp que existia no jogo, e eu ainda estava sendo louco e sonhador. <br>
-                            Desenhar as roupas de Genshin de forma detalhada é uma experiência dolorosa. <br>
-                            Mas, apesar disso, foi muito legal desenhar essas personagens.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CXU6KvtunCS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/FanartHutaoYoi.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Hutao e Yoimiya">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Oni</h3>
+              <p class="text-start text-white">
+                Eu queria desenhar algo sangrento, mas com um toque de verde.
+                Essa era a ideia inicial, e foi assim que este desenho nasceu.
+                <br />
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CiYNaaKugkC/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Eula -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Eula</h4>
-                        <p class="text-start text-white">
-                            Este desenho é uma fanart de Genshin Impact, e é da Eula. <br>
-                            Foi um desenho bem simples, e eu realmente gostei de desenhar os detalhes dela. Como é apenas ela, foi claro que foi bem mais tranquilo do que o de Hutao e Yoimiya. <br>
-                            Mas, mesmo assim, gosto bastante das artes dela.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CWYs0iurEoO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/FanartEula.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Eula">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card" id="aidem-antigo">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/VerdadeiroAidem.PNG"
+                  data-title="O Verdadeiro Aidem"
+                  aria-label="Ampliar O Verdadeiro Aidem"
+                >
+                  <img
+                    src="images/optimized/desenhos-verdadeiroaidem.webp"
+                    width="626"
+                    height="623"
+                    alt="O Verdadeiro Aidem"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Roger e Kai -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Casamento</h4>
-                        <p class="text-start text-white">
-                            Embora essa arte seja simples, ela é muito linda. <br>
-                            Pelo menos eu gosto, e foi um presente de casamento para meu primo.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CWEVywSvpfC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/CasamentoKaiERoger.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Roger e Kai">
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Aidem</h3>
+              <p class="text-start text-white">
+                Aidem é um personagem que faz parte do meu universo de OCs.
+                <br />
+                Ele pertence a Darbro e, basicamente, está em um processo de
+                corrupção. <br />
+              </p>
+              <p><a href="#estudos">Ver o redesign atual ↑</a></p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CgssJhuuCn8/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
-
-            <!-- Halloween -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Morcego Albino</h4>
-                        <p class="text-start text-white">
-                            Eu não dei nem nome nem história, mas a ideia é que, a cada Halloween, eu o colocaria em vários lugares. <br>
-                            É como um evento que sempre acontece em uma data específica, sabe? Ele seria um desenho que eu faria nesta data. <br>
-                            E, apesar de não ter elaborado nada tão profundo sobre ele, eu até gosto desse personagem.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CVtGQYrv76T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/MorcegoAlbino.PNG" class="img-fluid shadow-sm rounded img-desenho" alt="Morcego Albino">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/dePretoAovermelho.PNG"
+                  data-title="De preto ao vermelho"
+                  aria-label="Ampliar De preto ao vermelho"
+                >
+                  <img
+                    src="images/optimized/desenhos-depretoaovermelho.webp"
+                    width="624"
+                    height="416"
+                    alt="De preto ao vermelho"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Edward -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Edward</h4>
-                        <p class="text-start text-white">
-                            Esse é apenas um desenho que fiz por fazer. <br>
-                            Sem maiores intenções, simplesmente o fiz. Gosto de criar coisas que têm um toque mais gore, não sei bem o porquê, mas é isso.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CUq82HWsOwT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div id="carouselEd" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/Edward.PNG" class="d-block w-100" alt="Edward">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/EdwardAviso.PNG" class="d-block w-100" alt="Aviso Edward">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/EdwardCoracao.PNG" class="d-block w-100" alt="Edward Coração">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEd" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselEd" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>De Preto ao Vermelho</h3>
+              <p class="text-start text-white">
+                Este desenho também retrata o conto "De Preto ao Vermelho".
+                <br />
+                Nele, um pequenino caminha por uma estrada desolada, até que, em
+                meio à sua jornada, um grande lobo carmesim surge. <br />
+                O conto está postado próximo à arte.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CeUbgwwufPV/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver o conto no Instagram ↗</a
+              ><a
+                class="text-link"
+                href="https://www.instagram.com/p/CeUaomWO_zp/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver a arte no Instagram ↗</a
+              >
             </div>
-
-            <!-- Meu Oceano -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Primeira versão de Minha Baleia</h4>
-                        <p class="text-start text-white">
-                            Esta também é a primeira versão de "Meu Oceano". <br>
-                            Bem simples, mas tem um lugar especial no meu coração.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CThncM_LhzY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/desenhos/PrimeiraVersaoBaleia.PNG" class="img-fluid shadow-sm rounded" alt="Baleia primeira versão">
-                    </div>
-                </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Ekatos.PNG"
+                  data-title="Ekatos"
+                  aria-label="Ampliar Ekatos"
+                >
+                  <img
+                    src="images/optimized/desenhos-ekatos.webp"
+                    width="611"
+                    height="451"
+                    alt="Ekatos"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
             </div>
-
-            <!-- Darbro e Boobles -->
-            <div class="card bg-dark text-white mb-5 p-4 border-0">
-                <div class="row align-items-center flex-md-row flex-column-reverse">
-                    <div class="col-md-6">
-                        <h4 class="text-white">Darbro e Boobles</h4>
-                        <p class="text-start text-white">
-                            É uma pequena ilustração que eu desenhei para usar com minha amiga, Gabi.
-                        </p>
-                        <a class="btn btn-outline-light" href="https://www.instagram.com/p/CUq82HWsOwT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Ver no Instagram</a>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div id="carouselDB" class="carousel slide">
-                            <div class="carousel-inner rounded shadow-sm">
-                                <div class="carousel-item active">
-                                    <img src="images/desenhos/Darbro.PNG" class="d-block w-100" alt="Darbro">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/desenhos/Boobles.PNG" class="d-block w-100" alt="Boobles">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDB" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselDB" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                                <span class="visually-hidden">Próximo</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="art-caption">
+              <h3>Ekatos</h3>
+              <p class="text-start text-white">
+                Este é Ekatos, um personagem que também faz parte do meu
+                universo de OCs. <br />
+                Ele está no mesmo universo de Darbro, Kihiko, Horo e outros
+                personagens perdidos por aí. <br />
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CdpCR17ucJR/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
             </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PresenteMew.PNG"
+                  data-title="Presente Mewzuw"
+                  aria-label="Ampliar Presente Mewzuw"
+                >
+                  <img
+                    src="images/optimized/desenhos-presentemew.webp"
+                    width="611"
+                    height="463"
+                    alt="Presente Mewzuw"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Mewzuw</h3>
+              <p class="text-start text-white">
+                Esse desenho foi um presente para meu amigo Mewzuw, ao qual
+                citei mais cedo. <br />
+                Apesar de simples, é um desenho bem trabalhado ao qual eu gosto
+                de ver, e saber que ele também gostou, me deixa feliz.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CdZxRu2OTWF/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div
+              class="carousel"
+              id="carouselGabi"
+              aria-label="Versões de Gabi"
+            >
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PresenteGabi.PNG"
+                  data-title="Presente Gabi 1"
+                  aria-label="Ampliar Presente Gabi 1"
+                >
+                  <img
+                    src="images/optimized/desenhos-presentegabi.webp"
+                    width="616"
+                    height="595"
+                    alt="Presente Gabi 1"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PresenteGabiParteDois.PNG"
+                  data-title="Presente Gabi 2"
+                  aria-label="Ampliar Presente Gabi 2"
+                >
+                  <img
+                    src="images/optimized/desenhos-presentegabipartedois.webp"
+                    width="616"
+                    height="588"
+                    alt="Presente Gabi 2"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Gabi"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 2</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Gabi"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Gabi</h3>
+              <p class="text-start text-white">
+                Este desenho também foi um presente, e foi feito para a Gabi.
+                <br />
+                Eu queria algo diferente, então criei duas mini versões de
+                Darbro entregando flores como forma de presente.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CbT7wyoOqfM/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/DragaoNaturezaELoboEspada.PNG"
+                  data-title="Dragão e Lobo"
+                  aria-label="Ampliar Dragão e Lobo"
+                >
+                  <img
+                    src="images/optimized/desenhos-dragaonaturezaeloboespada.webp"
+                    width="616"
+                    height="625"
+                    alt="Dragão e Lobo"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Dragão e Lobo</h3>
+              <p class="text-start text-white">
+                Aqui está o meu esforço para desenhar um lobo em uma posição de
+                luta, segurando uma arma. <br />
+                O dragão está ali simplesmente porque eu gosto de dragões e
+                achei que faria sentido.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/HoroAndDarbro.PNG"
+                  data-title="Horo e Darbro"
+                  aria-label="Ampliar Horo e Darbro"
+                >
+                  <img
+                    src="images/optimized/desenhos-horoanddarbro.webp"
+                    width="623"
+                    height="630"
+                    alt="Horo e Darbro"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Horo e Darbro</h3>
+              <p class="text-start text-white">
+                Horo e Darbro, em um universo distante, discutindo. <br />
+                Apesar deste desenho ser antigo, ele é um dos meus favoritos,
+                especialmente pela anatomia.
+              </p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PrimeiraArteDePretoAoVermelho.PNG"
+                  data-title="De preto ao vermelho"
+                  aria-label="Ampliar De preto ao vermelho"
+                >
+                  <img
+                    src="images/optimized/desenhos-primeiraartedepretoaovermelho.webp"
+                    width="640"
+                    height="605"
+                    alt="De preto ao vermelho"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>De Preto ao Vermelho</h3>
+              <p class="text-start text-white">
+                Esta é a primeira arte de "Preto ao Vermelho". O conto já havia
+                sido escrito, mas não foi corrigido nem postado. <br />
+                Então, em meio a essa coletânea de desenhos no post, essa é a
+                primeira versão. <br />
+                Ela é a terceira arte no post do lobo.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div
+              class="carousel"
+              id="carouselIrmao"
+              aria-label="Versões de Os Três Irmãos"
+            >
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/SurdoCegoMudo.PNG"
+                  data-title="Três irmãos silhueta"
+                  aria-label="Ampliar Três irmãos silhueta"
+                >
+                  <img
+                    src="images/optimized/desenhos-surdocegomudo.webp"
+                    width="623"
+                    height="616"
+                    alt="Três irmãos silhueta"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/SurdoCegoMudoParteDois.PNG"
+                  data-title="Três irmãos"
+                  aria-label="Ampliar Três irmãos"
+                >
+                  <img
+                    src="images/optimized/desenhos-surdocegomudopartedois.webp"
+                    width="629"
+                    height="626"
+                    alt="Três irmãos"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Os Três Irmãos"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 2</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Os Três Irmãos"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Os Três Irmãos</h3>
+              <p class="text-start text-white">
+                Esse desenho surgiu devido àquela famosa expressão: "Não olhe
+                para o mal, não escute o mal, não pronuncie o mal". <br />
+                Mizaru, Kikazaru e Iwazaru - Os três macacos sábios. <br />
+                Eu então meio que desenhei uma versão minha, onde eles são
+                irmãos. <br />
+                São as duas últimas imagens do post do lobo.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/Ca5UqMvupvC/?utm_source=ig_web_copy_link"
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/AgathaEKuromeLuta.PNG"
+                  data-title="Kurome e Agatha"
+                  aria-label="Ampliar Kurome e Agatha"
+                >
+                  <img
+                    src="images/optimized/desenhos-agathaekuromeluta.webp"
+                    width="617"
+                    height="418"
+                    alt="Kurome e Agatha"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Em Meio à Luta</h3>
+              <p class="text-start text-white">
+                Atualmente, estou escrevendo <b>Abyss Tears</b>, que conta a
+                história de Kurome e Agatha no mundo de Opheromon. <br />
+                Essa arte representa um momento durante a jornada delas nesse
+                mundo, em meio a uma guerra contra diversos seres corrompidos.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.wattpad.com/1492577862-abyss-tears-cap%C3%ADtulo-1-despertar"
+                rel="noopener noreferrer"
+                >Leia no Wattpad! ↗</a
+              ><a
+                class="text-link"
+                href="https://www.instagram.com/p/CZxzSz6OdX5/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PresenteLulu.PNG"
+                  data-title="Saturn"
+                  aria-label="Ampliar Saturn"
+                >
+                  <img
+                    src="images/optimized/desenhos-presentelulu.webp"
+                    width="625"
+                    height="518"
+                    alt="Saturn"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Saturn</h3>
+              <p class="text-start text-white">
+                Esse desenho foi um presente para uma amiga, a Lulu. <br />
+                Eu estava desenhando a personagem dela no meu estilo, e o
+                resultado está aqui. <br />
+                Esse também é um dos meus desenhos favoritos.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CXhy1j6uBdF/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/FanartHutaoYoi.PNG"
+                  data-title="Hutao e Yoimiya"
+                  aria-label="Ampliar Hutao e Yoimiya"
+                >
+                  <img
+                    src="images/optimized/desenhos-fanarthutaoyoi.webp"
+                    width="620"
+                    height="446"
+                    alt="Hutao e Yoimiya"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Hutao e Yoimiya</h3>
+              <p class="text-start text-white">
+                Uma fanart de Genshin Impact. Basicamente, é um shipp que
+                existia no jogo, e eu ainda estava sendo louco e sonhador.
+                <br />
+                Desenhar as roupas de Genshin de forma detalhada é uma
+                experiência dolorosa. <br />
+                Mas, apesar disso, foi muito legal desenhar essas personagens.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CXU6KvtunCS/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/FanartEula.PNG"
+                  data-title="Eula"
+                  aria-label="Ampliar Eula"
+                >
+                  <img
+                    src="images/optimized/desenhos-fanarteula.webp"
+                    width="614"
+                    height="450"
+                    alt="Eula"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Eula</h3>
+              <p class="text-start text-white">
+                Este desenho é uma fanart de Genshin Impact, e é da Eula. <br />
+                Foi um desenho bem simples, e eu realmente gostei de desenhar os
+                detalhes dela. Como é apenas ela, foi claro que foi bem mais
+                tranquilo do que o de Hutao e Yoimiya. <br />
+                Mas, mesmo assim, gosto bastante das artes dela.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CWYs0iurEoO/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/CasamentoKaiERoger.PNG"
+                  data-title="Roger e Kai"
+                  aria-label="Ampliar Roger e Kai"
+                >
+                  <img
+                    src="images/optimized/desenhos-casamentokaieroger.webp"
+                    width="621"
+                    height="461"
+                    alt="Roger e Kai"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Casamento</h3>
+              <p class="text-start text-white">
+                Embora essa arte seja simples, ela é muito linda. <br />
+                Pelo menos eu gosto, e foi um presente de casamento para meu
+                primo.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CWEVywSvpfC/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/MorcegoAlbino.PNG"
+                  data-title="Morcego Albino"
+                  aria-label="Ampliar Morcego Albino"
+                >
+                  <img
+                    src="images/optimized/desenhos-morcegoalbino.webp"
+                    width="618"
+                    height="467"
+                    alt="Morcego Albino"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Morcego Albino</h3>
+              <p class="text-start text-white">
+                Eu não dei nem nome nem história, mas a ideia é que, a cada
+                Halloween, eu o colocaria em vários lugares. <br />
+                É como um evento que sempre acontece em uma data específica,
+                sabe? Ele seria um desenho que eu faria nesta data. <br />
+                E, apesar de não ter elaborado nada tão profundo sobre ele, eu
+                até gosto desse personagem.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CVtGQYrv76T/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div
+              class="carousel"
+              id="carouselEd"
+              aria-label="Versões de Edward"
+            >
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Edward.PNG"
+                  data-title="Edward"
+                  aria-label="Ampliar Edward"
+                >
+                  <img
+                    src="images/optimized/desenhos-edward.webp"
+                    width="625"
+                    height="467"
+                    alt="Edward"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/EdwardAviso.PNG"
+                  data-title="Aviso Edward"
+                  aria-label="Ampliar Aviso Edward"
+                >
+                  <img
+                    src="images/optimized/desenhos-edwardaviso.webp"
+                    width="586"
+                    height="439"
+                    alt="Aviso Edward"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/EdwardCoracao.PNG"
+                  data-title="Edward Coração"
+                  aria-label="Ampliar Edward Coração"
+                >
+                  <img
+                    src="images/optimized/desenhos-edwardcoracao.webp"
+                    width="613"
+                    height="466"
+                    alt="Edward Coração"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Edward"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 3</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Edward"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Edward</h3>
+              <p class="text-start text-white">
+                Esse é apenas um desenho que fiz por fazer. <br />
+                Sem maiores intenções, simplesmente o fiz. Gosto de criar coisas
+                que têm um toque mais gore, não sei bem o porquê, mas é isso.
+              </p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div>
+              <div>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/PrimeiraVersaoBaleia.PNG"
+                  data-title="Baleia primeira versão"
+                  aria-label="Ampliar Baleia primeira versão"
+                >
+                  <img
+                    src="images/optimized/desenhos-primeiraversaobaleia.webp"
+                    width="618"
+                    height="586"
+                    alt="Baleia primeira versão"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Primeira versão de Minha Baleia</h3>
+              <p class="text-start text-white">
+                Esta também é a primeira versão de "Meu Oceano". <br />
+                Bem simples, mas tem um lugar especial no meu coração.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.instagram.com/p/CThncM_LhzY/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
+                rel="noopener noreferrer"
+                >Ver no Instagram ↗</a
+              >
+            </div>
+          </article>
+          <article class="art-card">
+            <div
+              class="carousel"
+              id="carouselDB"
+              aria-label="Versões de Darbro e Boobles"
+            >
+              <div class="slide">
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Darbro.PNG"
+                  data-title="Darbro"
+                  aria-label="Ampliar Darbro"
+                >
+                  <img
+                    src="images/optimized/desenhos-darbro.webp"
+                    width="499"
+                    height="619"
+                    alt="Darbro"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="slide" hidden>
+                <button
+                  class="art-open"
+                  type="button"
+                  data-art="images/desenhos/Boobles.PNG"
+                  data-title="Boobles"
+                  aria-label="Ampliar Boobles"
+                >
+                  <img
+                    src="images/optimized/desenhos-boobles.webp"
+                    width="491"
+                    height="628"
+                    alt="Boobles"
+                    loading="lazy"
+                    decoding="async"
+                  /><span class="zoom-label" aria-hidden="true">Ampliar ↗</span>
+                </button>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Imagem anterior de Darbro e Boobles"
+                >
+                  ←</button
+                ><span class="slide-count" aria-live="polite">1 / 2</span
+                ><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Próxima imagem de Darbro e Boobles"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="art-caption">
+              <h3>Darbro e Boobles</h3>
+              <p class="text-start text-white">
+                É uma pequena ilustração que eu desenhei para usar com minha
+                amiga, Gabi.
+              </p>
+            </div>
+          </article>
         </div>
+      </section>
+    </main>
+    <section class="support shell" id="maoajudante">
+      <div>
+        <span class="eyebrow">Uma mão ajudante</span>
+        <h2>Gostou de passear por aqui?</h2>
+        <p>
+          Se gosta do que faço e quer ajudar, considere apoiar de alguma forma!
+          Você pode me seguir nas redes ou contribuir via PIX.
+        </p>
+        <div class="socials">
+          <a href="https://www.instagram.com/tbabestkid_/">Instagram ↗</a
+          ><a href="https://github.com/TBAbestkid">GitHub ↗</a
+          ><a href="https://x.com/TBestkid">X / Twitter ↗</a>
+        </div>
+      </div>
+      <figure>
+        <img
+          src="images/optimized/qrcode.webp"
+          width="640"
+          height="640"
+          alt="QR Code PIX original para apoiar TBAbestkid"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Um incentivo pra continuar criando. ♡</figcaption>
+      </figure>
     </section>
-    
-    <!-- Mão Ajudante -->
-    <section id="maoajudante" class="text-center mt-5 py-5 bg-dark text-white">
-        <div class="text-start container">
-            <h3 class="fw-bold mb-3">Que tal apoiar?</h3>
-            <p class="lead">
-                Eae curtiu minha arte? E meu estilo? Considere me motivar de alguma forma! <br>
-                Me seguindo nas redes ou contribuir financeiramente!
-            </p>
-
-            <!-- QR Codes -->
-            <div class="text-start d-flex justify-content-center gap-4 mt-4 flex-wrap">
-                <div class="text-start">
-                    <img src="images/Qrcode.jpeg" alt="QR Code PIX" class="img-fluid rounded shadow" width="150">
-                    <p class="mt-2 small">Doe via <b>PIX</b></p>
-                </div>
-                <!-- <div>
-                    <img src="images/qrcode-patreon.png" alt="QR Code Patreon" class="img-fluid rounded shadow" width="150">
-                    <p class="mt-2 small">Apoie no <b>Patreon</b></p>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Meu Oceano. Criado por TBAbestkid.</p>
-        <div class="social-icons mt-2">
-            <a href="https://x.com/TBestkid" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/tbabestkid_/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-            <!-- <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a> -->
-            <a href="https://github.com/TBAbestkid" class="text-white mx-2"><i class="fab fa-github"></i></a>
-        </div>
+    <footer class="site-footer shell">
+      <a class="brand" href="index.html">≋ Meu Oceano</a>
+      <p>Criado por TBAbestkid. Um pedacinho de mim na internet.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
     </footer>
-    
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</body>
+    <dialog id="art-viewer" aria-labelledby="art-title">
+      <div class="reader-head">
+        <h2 id="art-title">Arte ampliada</h2>
+        <button type="button" data-close>Fechar ×</button>
+      </div>
+      <img id="art-image" alt="" />
+      <p><a id="art-original">Abrir arquivo original ↗</a></p>
+    </dialog>
+  </body>
 </html>
